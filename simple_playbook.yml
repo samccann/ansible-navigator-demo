@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: true
+  tasks:
+
+  - name: Gather the package facts
+    ansible.builtin.package_facts:
+      manager: auto
+
+  - name: Check whether bash is installed
+    ansible.builtin.debug:
+      msg: "{{ ansible_facts.packages['bash'] | length }} versions of bash are installed!"
+

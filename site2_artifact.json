@@ -1,0 +1,2989 @@
+{
+    "version": "1.0.0",
+    "plays": [
+        {
+            "playbook": "/home/student1/ntp_demo/site2.yaml",
+            "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+            "play": "all",
+            "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+            "play_pattern": "all",
+            "name": "all",
+            "pattern": "all",
+            "uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+            "__play_name": "all",
+            "tasks": [
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Gathering Facts",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-00000000000e",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/home/student1/ntp_demo/site2.yaml:1",
+                    "host": "node1",
+                    "uuid": "5a1746be-458d-47a9-b26d-aca311351d80",
+                    "__host": "node1",
+                    "__result": "OK",
+                    "__changed": false,
+                    "__duration": "1s",
+                    "__number": 0,
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "remote_addr": "node1",
+                    "res": {
+                        "ansible_facts": {
+                            "ansible_system": "Linux",
+                            "ansible_kernel": "4.18.0-240.15.1.el8_3.x86_64",
+                            "ansible_kernel_version": "#1 SMP Wed Feb 3 03:12:15 EST 2021",
+                            "ansible_machine": "x86_64",
+                            "ansible_python_version": "3.6.8",
+                            "ansible_fqdn": "node1",
+                            "ansible_hostname": "node1",
+                            "ansible_nodename": "node1",
+                            "ansible_domain": "",
+                            "ansible_userspace_bits": "64",
+                            "ansible_architecture": "x86_64",
+                            "ansible_userspace_architecture": "x86_64",
+                            "ansible_machine_id": "ec2b9c676a1014cc3193adba6ad49ec9",
+                            "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQC9o9qZxcaVC+RblrKWbGTPtXehia1IhqroeyTWtCcycMBDoDkP/+TKyyxd9KwcR7WkRBHycy+bharqNYygTp6gomtgMidWEbBMOR2VH9Y7GqynLkDaI7mXvNMfosoe9hyNNJQHwstchJ+3L7N7jlwO5+g29Gf8TrLgjNQ7B0VZU6Z5/7YVSVUnhceXDDRk1qfTl0CKpdeYl9DY+mTO2QA45uCwTQ6jHqV9pFKWCSv3GIxnlwOKZ5msz2RGI3buT/ZxzYcDzroiz0gTWxfPhN2s5Ofj9Cjv0Zo7EVZpbuNC30GCZ1I7QoFDvCmQ4vf2QPgxWybdt5Pb74WLbZyc8sdS8hLS39jhf0DDAe5JTsgCy0FmfkHbHwQFOYYbrA9faRjh/UKJupSjOrRgHDRl53CtabukiUVrbgjhSFniTiV1bLS+GKtHpSLhTYaGX3Cjj+wX2w5XbP8UV4m90X3AV8hM0QsERxrj1twe39JMQjpJTPL7FQ6qmNk8EWSjGc7/X8s=",
+                            "ansible_ssh_host_key_rsa_public_keytype": "ssh-rsa",
+                            "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLnET3Xl/I/R4W/Ge4ny/2Jlaz7ThkzUSGKGf626+Ans78QwP0wZ3vLyPGC0tUri5qcpkiwez1ZTEjiV+QZ6XUc=",
+                            "ansible_ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
+                            "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIChI+nOJByP4Rj24OTc/9KSHTMSy8+502ppaF9ZnhqoU",
+                            "ansible_ssh_host_key_ed25519_public_keytype": "ssh-ed25519",
+                            "ansible_python": {
+                                "version": {
+                                    "major": 3,
+                                    "minor": 6,
+                                    "micro": 8,
+                                    "releaselevel": "final",
+                                    "serial": 0
+                                },
+                                "version_info": [
+                                    3,
+                                    6,
+                                    8,
+                                    "final",
+                                    0
+                                ],
+                                "executable": "/usr/libexec/platform-python",
+                                "has_sslcontext": true,
+                                "type": "cpython"
+                            },
+                            "ansible_user_id": "student1",
+                            "ansible_user_uid": 1001,
+                            "ansible_user_gid": 1001,
+                            "ansible_user_gecos": "",
+                            "ansible_user_dir": "/home/student1",
+                            "ansible_user_shell": "/bin/bash",
+                            "ansible_real_user_id": 1001,
+                            "ansible_effective_user_id": 1001,
+                            "ansible_real_group_id": 1001,
+                            "ansible_effective_group_id": 1001,
+                            "ansible_cmdline": {
+                                "BOOT_IMAGE": "(hd0,gpt2)/boot/vmlinuz-4.18.0-240.15.1.el8_3.x86_64",
+                                "root": "UUID=efe0f36a-dcf9-46df-b65b-06a62e750c21",
+                                "ro": true,
+                                "console": "tty0",
+                                "net.ifnames": "0",
+                                "rd.blacklist": "nouveau",
+                                "nvme_core.io_timeout": "4294967295",
+                                "crashkernel": "auto"
+                            },
+                            "ansible_proc_cmdline": {
+                                "BOOT_IMAGE": "(hd0,gpt2)/boot/vmlinuz-4.18.0-240.15.1.el8_3.x86_64",
+                                "root": "UUID=efe0f36a-dcf9-46df-b65b-06a62e750c21",
+                                "ro": true,
+                                "console": [
+                                    "ttyS0,115200n8",
+                                    "tty0"
+                                ],
+                                "net.ifnames": "0",
+                                "rd.blacklist": "nouveau",
+                                "nvme_core.io_timeout": "4294967295",
+                                "crashkernel": "auto"
+                            },
+                            "ansible_is_chroot": false,
+                            "ansible_distribution": "RedHat",
+                            "ansible_distribution_release": "Ootpa",
+                            "ansible_distribution_version": "8.3",
+                            "ansible_distribution_major_version": "8",
+                            "ansible_distribution_file_path": "/etc/redhat-release",
+                            "ansible_distribution_file_variety": "RedHat",
+                            "ansible_distribution_file_parsed": true,
+                            "ansible_distribution_file_search_string": "Red Hat",
+                            "ansible_os_family": "RedHat",
+                            "ansible_fibre_channel_wwn": [],
+                            "ansible_dns": {
+                                "search": [
+                                    "ec2.internal"
+                                ],
+                                "nameservers": [
+                                    "172.16.0.2"
+                                ]
+                            },
+                            "ansible_system_capabilities_enforced": "True",
+                            "ansible_system_capabilities": [
+                                ""
+                            ],
+                            "ansible_selinux_python_present": true,
+                            "ansible_selinux": {
+                                "status": "enabled",
+                                "policyvers": 32,
+                                "config_mode": "enforcing",
+                                "mode": "enforcing",
+                                "type": "targeted"
+                            },
+                            "ansible_virtualization_role": "guest",
+                            "ansible_virtualization_type": "kvm",
+                            "ansible_virtualization_tech_guest": [
+                                "kvm"
+                            ],
+                            "ansible_virtualization_tech_host": [],
+                            "ansible_date_time": {
+                                "year": "2021",
+                                "month": "03",
+                                "weekday": "Wednesday",
+                                "weekday_number": "3",
+                                "weeknumber": "11",
+                                "day": "17",
+                                "hour": "21",
+                                "minute": "02",
+                                "second": "04",
+                                "epoch": "1616014924",
+                                "date": "2021-03-17",
+                                "time": "21:02:04",
+                                "iso8601_micro": "2021-03-17T21:02:04.866637Z",
+                                "iso8601": "2021-03-17T21:02:04Z",
+                                "iso8601_basic": "20210317T210204866637",
+                                "iso8601_basic_short": "20210317T210204",
+                                "tz": "UTC",
+                                "tz_dst": "UTC",
+                                "tz_offset": "+0000"
+                            },
+                            "ansible_hostnqn": "",
+                            "ansible_fips": false,
+                            "ansible_interfaces": [
+                                "eth0",
+                                "lo"
+                            ],
+                            "ansible_lo": {
+                                "device": "lo",
+                                "mtu": 65536,
+                                "active": true,
+                                "type": "loopback",
+                                "promisc": false,
+                                "ipv4": {
+                                    "address": "127.0.0.1",
+                                    "broadcast": "",
+                                    "netmask": "255.0.0.0",
+                                    "network": "127.0.0.0"
+                                },
+                                "ipv6": [
+                                    {
+                                        "address": "::1",
+                                        "prefix": "128",
+                                        "scope": "host"
+                                    }
+                                ],
+                                "features": {
+                                    "rx_checksumming": "on [fixed]",
+                                    "tx_checksumming": "on",
+                                    "tx_checksum_ipv4": "off [fixed]",
+                                    "tx_checksum_ip_generic": "on [fixed]",
+                                    "tx_checksum_ipv6": "off [fixed]",
+                                    "tx_checksum_fcoe_crc": "off [fixed]",
+                                    "tx_checksum_sctp": "on [fixed]",
+                                    "scatter_gather": "on",
+                                    "tx_scatter_gather": "on [fixed]",
+                                    "tx_scatter_gather_fraglist": "on [fixed]",
+                                    "tcp_segmentation_offload": "on",
+                                    "tx_tcp_segmentation": "on",
+                                    "tx_tcp_ecn_segmentation": "on",
+                                    "tx_tcp_mangleid_segmentation": "on",
+                                    "tx_tcp6_segmentation": "on",
+                                    "generic_segmentation_offload": "on",
+                                    "generic_receive_offload": "on",
+                                    "large_receive_offload": "off [fixed]",
+                                    "rx_vlan_offload": "off [fixed]",
+                                    "tx_vlan_offload": "off [fixed]",
+                                    "ntuple_filters": "off [fixed]",
+                                    "receive_hashing": "off [fixed]",
+                                    "highdma": "on [fixed]",
+                                    "rx_vlan_filter": "off [fixed]",
+                                    "vlan_challenged": "on [fixed]",
+                                    "tx_lockless": "on [fixed]",
+                                    "netns_local": "on [fixed]",
+                                    "tx_gso_robust": "off [fixed]",
+                                    "tx_fcoe_segmentation": "off [fixed]",
+                                    "tx_gre_segmentation": "off [fixed]",
+                                    "tx_gre_csum_segmentation": "off [fixed]",
+                                    "tx_ipxip4_segmentation": "off [fixed]",
+                                    "tx_ipxip6_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                                    "tx_gso_partial": "off [fixed]",
+                                    "tx_sctp_segmentation": "on",
+                                    "tx_esp_segmentation": "off [fixed]",
+                                    "tx_udp_segmentation": "off [fixed]",
+                                    "tls_hw_rx_offload": "off [fixed]",
+                                    "fcoe_mtu": "off [fixed]",
+                                    "tx_nocache_copy": "off [fixed]",
+                                    "loopback": "on [fixed]",
+                                    "rx_fcs": "off [fixed]",
+                                    "rx_all": "off [fixed]",
+                                    "tx_vlan_stag_hw_insert": "off [fixed]",
+                                    "rx_vlan_stag_hw_parse": "off [fixed]",
+                                    "rx_vlan_stag_filter": "off [fixed]",
+                                    "l2_fwd_offload": "off [fixed]",
+                                    "hw_tc_offload": "off [fixed]",
+                                    "esp_hw_offload": "off [fixed]",
+                                    "esp_tx_csum_hw_offload": "off [fixed]",
+                                    "rx_udp_tunnel_port_offload": "off [fixed]",
+                                    "tls_hw_tx_offload": "off [fixed]",
+                                    "rx_gro_hw": "off [fixed]",
+                                    "tls_hw_record": "off [fixed]"
+                                },
+                                "timestamping": [
+                                    "tx_software",
+                                    "rx_software",
+                                    "software"
+                                ],
+                                "hw_timestamp_filters": []
+                            },
+                            "ansible_eth0": {
+                                "device": "eth0",
+                                "macaddress": "0a:51:a5:d4:34:51",
+                                "mtu": 9001,
+                                "active": true,
+                                "module": "ena",
+                                "type": "ether",
+                                "pciid": "0000:00:05.0",
+                                "promisc": false,
+                                "ipv4": {
+                                    "address": "172.16.168.51",
+                                    "broadcast": "172.16.255.255",
+                                    "netmask": "255.255.0.0",
+                                    "network": "172.16.0.0"
+                                },
+                                "ipv6": [
+                                    {
+                                        "address": "fe80::851:a5ff:fed4:3451",
+                                        "prefix": "64",
+                                        "scope": "link"
+                                    }
+                                ],
+                                "features": {
+                                    "rx_checksumming": "off [fixed]",
+                                    "tx_checksumming": "on",
+                                    "tx_checksum_ipv4": "on",
+                                    "tx_checksum_ip_generic": "off [fixed]",
+                                    "tx_checksum_ipv6": "off [fixed]",
+                                    "tx_checksum_fcoe_crc": "off [fixed]",
+                                    "tx_checksum_sctp": "off [fixed]",
+                                    "scatter_gather": "on",
+                                    "tx_scatter_gather": "on",
+                                    "tx_scatter_gather_fraglist": "off [fixed]",
+                                    "tcp_segmentation_offload": "off",
+                                    "tx_tcp_segmentation": "off [fixed]",
+                                    "tx_tcp_ecn_segmentation": "off [fixed]",
+                                    "tx_tcp_mangleid_segmentation": "off [fixed]",
+                                    "tx_tcp6_segmentation": "off [fixed]",
+                                    "generic_segmentation_offload": "on",
+                                    "generic_receive_offload": "on",
+                                    "large_receive_offload": "off [fixed]",
+                                    "rx_vlan_offload": "off [fixed]",
+                                    "tx_vlan_offload": "off [fixed]",
+                                    "ntuple_filters": "off [fixed]",
+                                    "receive_hashing": "on",
+                                    "highdma": "on",
+                                    "rx_vlan_filter": "off [fixed]",
+                                    "vlan_challenged": "off [fixed]",
+                                    "tx_lockless": "off [fixed]",
+                                    "netns_local": "off [fixed]",
+                                    "tx_gso_robust": "off [fixed]",
+                                    "tx_fcoe_segmentation": "off [fixed]",
+                                    "tx_gre_segmentation": "off [fixed]",
+                                    "tx_gre_csum_segmentation": "off [fixed]",
+                                    "tx_ipxip4_segmentation": "off [fixed]",
+                                    "tx_ipxip6_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                                    "tx_gso_partial": "off [fixed]",
+                                    "tx_sctp_segmentation": "off [fixed]",
+                                    "tx_esp_segmentation": "off [fixed]",
+                                    "tx_udp_segmentation": "off [fixed]",
+                                    "tls_hw_rx_offload": "off [fixed]",
+                                    "fcoe_mtu": "off [fixed]",
+                                    "tx_nocache_copy": "off",
+                                    "loopback": "off [fixed]",
+                                    "rx_fcs": "off [fixed]",
+                                    "rx_all": "off [fixed]",
+                                    "tx_vlan_stag_hw_insert": "off [fixed]",
+                                    "rx_vlan_stag_hw_parse": "off [fixed]",
+                                    "rx_vlan_stag_filter": "off [fixed]",
+                                    "l2_fwd_offload": "off [fixed]",
+                                    "hw_tc_offload": "off [fixed]",
+                                    "esp_hw_offload": "off [fixed]",
+                                    "esp_tx_csum_hw_offload": "off [fixed]",
+                                    "rx_udp_tunnel_port_offload": "off [fixed]",
+                                    "tls_hw_tx_offload": "off [fixed]",
+                                    "rx_gro_hw": "off [fixed]",
+                                    "tls_hw_record": "off [fixed]"
+                                },
+                                "timestamping": [
+                                    "rx_software",
+                                    "software"
+                                ],
+                                "hw_timestamp_filters": []
+                            },
+                            "ansible_default_ipv4": {
+                                "gateway": "172.16.0.1",
+                                "interface": "eth0",
+                                "address": "172.16.168.51",
+                                "broadcast": "172.16.255.255",
+                                "netmask": "255.255.0.0",
+                                "network": "172.16.0.0",
+                                "macaddress": "0a:51:a5:d4:34:51",
+                                "mtu": 9001,
+                                "type": "ether",
+                                "alias": "eth0"
+                            },
+                            "ansible_default_ipv6": {},
+                            "ansible_all_ipv4_addresses": [
+                                "172.16.168.51"
+                            ],
+                            "ansible_all_ipv6_addresses": [
+                                "fe80::851:a5ff:fed4:3451"
+                            ],
+                            "ansible_processor": [
+                                "0",
+                                "GenuineIntel",
+                                "Intel(R) Xeon(R) Platinum 8175M CPU @ 2.50GHz",
+                                "1",
+                                "GenuineIntel",
+                                "Intel(R) Xeon(R) Platinum 8175M CPU @ 2.50GHz"
+                            ],
+                            "ansible_processor_count": 1,
+                            "ansible_processor_cores": 1,
+                            "ansible_processor_threads_per_core": 2,
+                            "ansible_processor_vcpus": 2,
+                            "ansible_processor_nproc": 2,
+                            "ansible_memtotal_mb": 782,
+                            "ansible_memfree_mb": 194,
+                            "ansible_swaptotal_mb": 0,
+                            "ansible_swapfree_mb": 0,
+                            "ansible_memory_mb": {
+                                "real": {
+                                    "total": 782,
+                                    "used": 588,
+                                    "free": 194
+                                },
+                                "nocache": {
+                                    "free": 540,
+                                    "used": 242
+                                },
+                                "swap": {
+                                    "total": 0,
+                                    "free": 0,
+                                    "used": 0,
+                                    "cached": 0
+                                }
+                            },
+                            "ansible_bios_date": "10/16/2017",
+                            "ansible_bios_vendor": "Amazon EC2",
+                            "ansible_bios_version": "1.0",
+                            "ansible_board_asset_tag": "i-0e30436ba9c2814fc",
+                            "ansible_board_name": "NA",
+                            "ansible_board_serial": "NA",
+                            "ansible_board_vendor": "Amazon EC2",
+                            "ansible_board_version": "NA",
+                            "ansible_chassis_asset_tag": "Amazon EC2",
+                            "ansible_chassis_serial": "NA",
+                            "ansible_chassis_vendor": "Amazon EC2",
+                            "ansible_chassis_version": "NA",
+                            "ansible_form_factor": "Other",
+                            "ansible_product_name": "t3.micro",
+                            "ansible_product_serial": "NA",
+                            "ansible_product_uuid": "NA",
+                            "ansible_product_version": "NA",
+                            "ansible_system_vendor": "Amazon EC2",
+                            "ansible_devices": {
+                                "nvme0n1": {
+                                    "virtual": 1,
+                                    "links": {
+                                        "ids": [
+                                            "nvme-Amazon_Elastic_Block_Store_vol0530ec11424877779",
+                                            "nvme-nvme.1d0f-766f6c3035333065633131343234383737373739-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                                        ],
+                                        "uuids": [],
+                                        "labels": [],
+                                        "masters": []
+                                    },
+                                    "vendor": null,
+                                    "model": "Amazon Elastic Block Store",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "removable": "0",
+                                    "support_discard": "0",
+                                    "partitions": {
+                                        "nvme0n1p1": {
+                                            "links": {
+                                                "ids": [
+                                                    "nvme-Amazon_Elastic_Block_Store_vol0530ec11424877779-part1",
+                                                    "nvme-nvme.1d0f-766f6c3035333065633131343234383737373739-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1",
+                                                    "wwn-nvme.1d0f-766f6c3035333065633131343234383737373739-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                                                ],
+                                                "uuids": [],
+                                                "labels": [],
+                                                "masters": []
+                                            },
+                                            "start": "2048",
+                                            "sectors": "2048",
+                                            "sectorsize": 512,
+                                            "size": "1.00 MB",
+                                            "uuid": null,
+                                            "holders": []
+                                        },
+                                        "nvme0n1p2": {
+                                            "links": {
+                                                "ids": [
+                                                    "nvme-Amazon_Elastic_Block_Store_vol0530ec11424877779-part2",
+                                                    "nvme-nvme.1d0f-766f6c3035333065633131343234383737373739-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2",
+                                                    "wwn-nvme.1d0f-766f6c3035333065633131343234383737373739-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2"
+                                                ],
+                                                "uuids": [
+                                                    "efe0f36a-dcf9-46df-b65b-06a62e750c21"
+                                                ],
+                                                "labels": [],
+                                                "masters": []
+                                            },
+                                            "start": "4096",
+                                            "sectors": "20967391",
+                                            "sectorsize": 512,
+                                            "size": "10.00 GB",
+                                            "uuid": "efe0f36a-dcf9-46df-b65b-06a62e750c21",
+                                            "holders": []
+                                        }
+                                    },
+                                    "rotational": "0",
+                                    "scheduler_mode": "none",
+                                    "sectors": "20971520",
+                                    "sectorsize": "512",
+                                    "size": "10.00 GB",
+                                    "host": "Non-Volatile memory controller: Amazon.com, Inc. Device 8061",
+                                    "holders": []
+                                }
+                            },
+                            "ansible_device_links": {
+                                "ids": {
+                                    "nvme0n1p1": [
+                                        "nvme-Amazon_Elastic_Block_Store_vol0530ec11424877779-part1",
+                                        "nvme-nvme.1d0f-766f6c3035333065633131343234383737373739-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1",
+                                        "wwn-nvme.1d0f-766f6c3035333065633131343234383737373739-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                                    ],
+                                    "nvme0n1p2": [
+                                        "nvme-Amazon_Elastic_Block_Store_vol0530ec11424877779-part2",
+                                        "nvme-nvme.1d0f-766f6c3035333065633131343234383737373739-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2",
+                                        "wwn-nvme.1d0f-766f6c3035333065633131343234383737373739-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2"
+                                    ],
+                                    "nvme0n1": [
+                                        "nvme-Amazon_Elastic_Block_Store_vol0530ec11424877779",
+                                        "nvme-nvme.1d0f-766f6c3035333065633131343234383737373739-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                                    ]
+                                },
+                                "uuids": {
+                                    "nvme0n1p2": [
+                                        "efe0f36a-dcf9-46df-b65b-06a62e750c21"
+                                    ]
+                                },
+                                "labels": {},
+                                "masters": {}
+                            },
+                            "ansible_uptime_seconds": 195466,
+                            "ansible_mounts": [
+                                {
+                                    "mount": "/",
+                                    "device": "/dev/nvme0n1p2",
+                                    "fstype": "xfs",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+                                    "size_total": 10724814848,
+                                    "size_available": 9000620032,
+                                    "block_size": 4096,
+                                    "block_total": 2618363,
+                                    "block_available": 2197417,
+                                    "block_used": 420946,
+                                    "inode_total": 5241840,
+                                    "inode_available": 5199795,
+                                    "inode_used": 42045,
+                                    "uuid": "efe0f36a-dcf9-46df-b65b-06a62e750c21"
+                                }
+                            ],
+                            "ansible_apparmor": {
+                                "status": "disabled"
+                            },
+                            "ansible_local": {},
+                            "ansible_lsb": {},
+                            "ansible_iscsi_iqn": "",
+                            "ansible_service_mgr": "systemd",
+                            "ansible_pkg_mgr": "dnf",
+                            "gather_subset": [
+                                "all"
+                            ],
+                            "module_setup": true,
+                            "discovered_interpreter_python": "/usr/libexec/platform-python"
+                        },
+                        "warnings": [],
+                        "deprecations": [],
+                        "_ansible_verbose_override": true,
+                        "_ansible_no_log": false,
+                        "changed": false
+                    },
+                    "start": "2021-03-17T21:02:03.429464",
+                    "end": "2021-03-17T21:02:05.112313",
+                    "duration": 1.682849,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Gathering Facts",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-00000000000e",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/home/student1/ntp_demo/site2.yaml:1",
+                    "host": "node2",
+                    "uuid": "7ff40a27-2677-441d-b94e-ca2fdd2afde0",
+                    "__host": "node2",
+                    "__result": "OK",
+                    "__changed": false,
+                    "__duration": "2s",
+                    "__number": 1,
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "remote_addr": "node2",
+                    "res": {
+                        "ansible_facts": {
+                            "ansible_distribution": "RedHat",
+                            "ansible_distribution_release": "Ootpa",
+                            "ansible_distribution_version": "8.3",
+                            "ansible_distribution_major_version": "8",
+                            "ansible_distribution_file_path": "/etc/redhat-release",
+                            "ansible_distribution_file_variety": "RedHat",
+                            "ansible_distribution_file_parsed": true,
+                            "ansible_distribution_file_search_string": "Red Hat",
+                            "ansible_os_family": "RedHat",
+                            "ansible_cmdline": {
+                                "BOOT_IMAGE": "(hd0,gpt2)/boot/vmlinuz-4.18.0-240.15.1.el8_3.x86_64",
+                                "root": "UUID=efe0f36a-dcf9-46df-b65b-06a62e750c21",
+                                "ro": true,
+                                "console": "tty0",
+                                "net.ifnames": "0",
+                                "rd.blacklist": "nouveau",
+                                "nvme_core.io_timeout": "4294967295",
+                                "crashkernel": "auto"
+                            },
+                            "ansible_proc_cmdline": {
+                                "BOOT_IMAGE": "(hd0,gpt2)/boot/vmlinuz-4.18.0-240.15.1.el8_3.x86_64",
+                                "root": "UUID=efe0f36a-dcf9-46df-b65b-06a62e750c21",
+                                "ro": true,
+                                "console": [
+                                    "ttyS0,115200n8",
+                                    "tty0"
+                                ],
+                                "net.ifnames": "0",
+                                "rd.blacklist": "nouveau",
+                                "nvme_core.io_timeout": "4294967295",
+                                "crashkernel": "auto"
+                            },
+                            "ansible_system": "Linux",
+                            "ansible_kernel": "4.18.0-240.15.1.el8_3.x86_64",
+                            "ansible_kernel_version": "#1 SMP Wed Feb 3 03:12:15 EST 2021",
+                            "ansible_machine": "x86_64",
+                            "ansible_python_version": "3.6.8",
+                            "ansible_fqdn": "node2",
+                            "ansible_hostname": "node2",
+                            "ansible_nodename": "node2",
+                            "ansible_domain": "",
+                            "ansible_userspace_bits": "64",
+                            "ansible_architecture": "x86_64",
+                            "ansible_userspace_architecture": "x86_64",
+                            "ansible_machine_id": "ec23ffa191867c21087da3684f87fbc3",
+                            "ansible_fibre_channel_wwn": [],
+                            "ansible_virtualization_role": "guest",
+                            "ansible_virtualization_type": "kvm",
+                            "ansible_virtualization_tech_guest": [
+                                "kvm"
+                            ],
+                            "ansible_virtualization_tech_host": [],
+                            "ansible_system_capabilities_enforced": "True",
+                            "ansible_system_capabilities": [
+                                ""
+                            ],
+                            "ansible_user_id": "student1",
+                            "ansible_user_uid": 1001,
+                            "ansible_user_gid": 1001,
+                            "ansible_user_gecos": "",
+                            "ansible_user_dir": "/home/student1",
+                            "ansible_user_shell": "/bin/bash",
+                            "ansible_real_user_id": 1001,
+                            "ansible_effective_user_id": 1001,
+                            "ansible_real_group_id": 1001,
+                            "ansible_effective_group_id": 1001,
+                            "ansible_hostnqn": "",
+                            "ansible_date_time": {
+                                "year": "2021",
+                                "month": "03",
+                                "weekday": "Wednesday",
+                                "weekday_number": "3",
+                                "weeknumber": "11",
+                                "day": "17",
+                                "hour": "21",
+                                "minute": "02",
+                                "second": "04",
+                                "epoch": "1616014924",
+                                "date": "2021-03-17",
+                                "time": "21:02:04",
+                                "iso8601_micro": "2021-03-17T21:02:04.884402Z",
+                                "iso8601": "2021-03-17T21:02:04Z",
+                                "iso8601_basic": "20210317T210204884402",
+                                "iso8601_basic_short": "20210317T210204",
+                                "tz": "UTC",
+                                "tz_dst": "UTC",
+                                "tz_offset": "+0000"
+                            },
+                            "ansible_apparmor": {
+                                "status": "disabled"
+                            },
+                            "ansible_fips": false,
+                            "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQC328iFlV0v4VmDeNXXEhARsYh7H2qaPoxqspkWgYrWFrYLFsjatTA8EORdwdcr8j2gMAdUljWSB3FgXN1U32PspTtEA0V2ZdUUvWWHSTy/rh8iQfnzLvuMUsudkOhkBeBJllmJIn8chZ94H7p9nCZonfpSGP4fM0aV/dSC7LCDO+WcdWaiMm+PL636Q2TOpZRVA/ahY4vjMDD4jEtAd0jcp6arSEGIIoppzR7LYiv3WL8bQjDIWoYmg7lXuU29Oll2hSLbBRDk9nTO0HxcSRdsKMMnNqkj2BakSVK09FYnnRcErOo05sRbxT/NGnIiChMXjsMz+wpI/9MvWfTwqwHEzRmaaXn//ZtPEqawM5odK9VYrjrcpSyPvXDEKQAznk6WUca+GseG7lFEFReCnZsK+Kj9a9Q2o28sYrVn4bw/mE0OIzEmU54yUe02sWGZQnMvtJ7jggh2EflFlKasmhA5AMcq6JXcF7cfckMxZh/8oxb1beZGc7GGFdVkmdpD+pM=",
+                            "ansible_ssh_host_key_rsa_public_keytype": "ssh-rsa",
+                            "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMk+ZJkJIGQXi++sKfLAMSjPcHtNPMgnEexHCiO+Mb5ONjmPibzf4L+8yS2gJrFlzic+M/uh2qD5/aObPN/FS18=",
+                            "ansible_ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
+                            "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIHwR4B6N1a0HiuFx7UbyL8QSBufu6wizIB3bI5mmQE5v",
+                            "ansible_ssh_host_key_ed25519_public_keytype": "ssh-ed25519",
+                            "ansible_is_chroot": false,
+                            "ansible_selinux_python_present": true,
+                            "ansible_selinux": {
+                                "status": "enabled",
+                                "policyvers": 32,
+                                "config_mode": "enforcing",
+                                "mode": "enforcing",
+                                "type": "targeted"
+                            },
+                            "ansible_lsb": {},
+                            "ansible_iscsi_iqn": "",
+                            "ansible_pkg_mgr": "dnf",
+                            "ansible_interfaces": [
+                                "lo",
+                                "eth0"
+                            ],
+                            "ansible_eth0": {
+                                "device": "eth0",
+                                "macaddress": "0a:19:2d:d6:ad:ab",
+                                "mtu": 9001,
+                                "active": true,
+                                "module": "ena",
+                                "type": "ether",
+                                "pciid": "0000:00:05.0",
+                                "promisc": false,
+                                "ipv4": {
+                                    "address": "172.16.141.227",
+                                    "broadcast": "172.16.255.255",
+                                    "netmask": "255.255.0.0",
+                                    "network": "172.16.0.0"
+                                },
+                                "ipv6": [
+                                    {
+                                        "address": "fe80::819:2dff:fed6:adab",
+                                        "prefix": "64",
+                                        "scope": "link"
+                                    }
+                                ],
+                                "features": {
+                                    "rx_checksumming": "off [fixed]",
+                                    "tx_checksumming": "on",
+                                    "tx_checksum_ipv4": "on",
+                                    "tx_checksum_ip_generic": "off [fixed]",
+                                    "tx_checksum_ipv6": "off [fixed]",
+                                    "tx_checksum_fcoe_crc": "off [fixed]",
+                                    "tx_checksum_sctp": "off [fixed]",
+                                    "scatter_gather": "on",
+                                    "tx_scatter_gather": "on",
+                                    "tx_scatter_gather_fraglist": "off [fixed]",
+                                    "tcp_segmentation_offload": "off",
+                                    "tx_tcp_segmentation": "off [fixed]",
+                                    "tx_tcp_ecn_segmentation": "off [fixed]",
+                                    "tx_tcp_mangleid_segmentation": "off [fixed]",
+                                    "tx_tcp6_segmentation": "off [fixed]",
+                                    "generic_segmentation_offload": "on",
+                                    "generic_receive_offload": "on",
+                                    "large_receive_offload": "off [fixed]",
+                                    "rx_vlan_offload": "off [fixed]",
+                                    "tx_vlan_offload": "off [fixed]",
+                                    "ntuple_filters": "off [fixed]",
+                                    "receive_hashing": "on",
+                                    "highdma": "on",
+                                    "rx_vlan_filter": "off [fixed]",
+                                    "vlan_challenged": "off [fixed]",
+                                    "tx_lockless": "off [fixed]",
+                                    "netns_local": "off [fixed]",
+                                    "tx_gso_robust": "off [fixed]",
+                                    "tx_fcoe_segmentation": "off [fixed]",
+                                    "tx_gre_segmentation": "off [fixed]",
+                                    "tx_gre_csum_segmentation": "off [fixed]",
+                                    "tx_ipxip4_segmentation": "off [fixed]",
+                                    "tx_ipxip6_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                                    "tx_gso_partial": "off [fixed]",
+                                    "tx_sctp_segmentation": "off [fixed]",
+                                    "tx_esp_segmentation": "off [fixed]",
+                                    "tx_udp_segmentation": "off [fixed]",
+                                    "tls_hw_rx_offload": "off [fixed]",
+                                    "fcoe_mtu": "off [fixed]",
+                                    "tx_nocache_copy": "off",
+                                    "loopback": "off [fixed]",
+                                    "rx_fcs": "off [fixed]",
+                                    "rx_all": "off [fixed]",
+                                    "tx_vlan_stag_hw_insert": "off [fixed]",
+                                    "rx_vlan_stag_hw_parse": "off [fixed]",
+                                    "rx_vlan_stag_filter": "off [fixed]",
+                                    "l2_fwd_offload": "off [fixed]",
+                                    "hw_tc_offload": "off [fixed]",
+                                    "esp_hw_offload": "off [fixed]",
+                                    "esp_tx_csum_hw_offload": "off [fixed]",
+                                    "rx_udp_tunnel_port_offload": "off [fixed]",
+                                    "tls_hw_tx_offload": "off [fixed]",
+                                    "rx_gro_hw": "off [fixed]",
+                                    "tls_hw_record": "off [fixed]"
+                                },
+                                "timestamping": [
+                                    "rx_software",
+                                    "software"
+                                ],
+                                "hw_timestamp_filters": []
+                            },
+                            "ansible_lo": {
+                                "device": "lo",
+                                "mtu": 65536,
+                                "active": true,
+                                "type": "loopback",
+                                "promisc": false,
+                                "ipv4": {
+                                    "address": "127.0.0.1",
+                                    "broadcast": "",
+                                    "netmask": "255.0.0.0",
+                                    "network": "127.0.0.0"
+                                },
+                                "ipv6": [
+                                    {
+                                        "address": "::1",
+                                        "prefix": "128",
+                                        "scope": "host"
+                                    }
+                                ],
+                                "features": {
+                                    "rx_checksumming": "on [fixed]",
+                                    "tx_checksumming": "on",
+                                    "tx_checksum_ipv4": "off [fixed]",
+                                    "tx_checksum_ip_generic": "on [fixed]",
+                                    "tx_checksum_ipv6": "off [fixed]",
+                                    "tx_checksum_fcoe_crc": "off [fixed]",
+                                    "tx_checksum_sctp": "on [fixed]",
+                                    "scatter_gather": "on",
+                                    "tx_scatter_gather": "on [fixed]",
+                                    "tx_scatter_gather_fraglist": "on [fixed]",
+                                    "tcp_segmentation_offload": "on",
+                                    "tx_tcp_segmentation": "on",
+                                    "tx_tcp_ecn_segmentation": "on",
+                                    "tx_tcp_mangleid_segmentation": "on",
+                                    "tx_tcp6_segmentation": "on",
+                                    "generic_segmentation_offload": "on",
+                                    "generic_receive_offload": "on",
+                                    "large_receive_offload": "off [fixed]",
+                                    "rx_vlan_offload": "off [fixed]",
+                                    "tx_vlan_offload": "off [fixed]",
+                                    "ntuple_filters": "off [fixed]",
+                                    "receive_hashing": "off [fixed]",
+                                    "highdma": "on [fixed]",
+                                    "rx_vlan_filter": "off [fixed]",
+                                    "vlan_challenged": "on [fixed]",
+                                    "tx_lockless": "on [fixed]",
+                                    "netns_local": "on [fixed]",
+                                    "tx_gso_robust": "off [fixed]",
+                                    "tx_fcoe_segmentation": "off [fixed]",
+                                    "tx_gre_segmentation": "off [fixed]",
+                                    "tx_gre_csum_segmentation": "off [fixed]",
+                                    "tx_ipxip4_segmentation": "off [fixed]",
+                                    "tx_ipxip6_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                                    "tx_gso_partial": "off [fixed]",
+                                    "tx_sctp_segmentation": "on",
+                                    "tx_esp_segmentation": "off [fixed]",
+                                    "tx_udp_segmentation": "off [fixed]",
+                                    "tls_hw_rx_offload": "off [fixed]",
+                                    "fcoe_mtu": "off [fixed]",
+                                    "tx_nocache_copy": "off [fixed]",
+                                    "loopback": "on [fixed]",
+                                    "rx_fcs": "off [fixed]",
+                                    "rx_all": "off [fixed]",
+                                    "tx_vlan_stag_hw_insert": "off [fixed]",
+                                    "rx_vlan_stag_hw_parse": "off [fixed]",
+                                    "rx_vlan_stag_filter": "off [fixed]",
+                                    "l2_fwd_offload": "off [fixed]",
+                                    "hw_tc_offload": "off [fixed]",
+                                    "esp_hw_offload": "off [fixed]",
+                                    "esp_tx_csum_hw_offload": "off [fixed]",
+                                    "rx_udp_tunnel_port_offload": "off [fixed]",
+                                    "tls_hw_tx_offload": "off [fixed]",
+                                    "rx_gro_hw": "off [fixed]",
+                                    "tls_hw_record": "off [fixed]"
+                                },
+                                "timestamping": [
+                                    "tx_software",
+                                    "rx_software",
+                                    "software"
+                                ],
+                                "hw_timestamp_filters": []
+                            },
+                            "ansible_default_ipv4": {
+                                "gateway": "172.16.0.1",
+                                "interface": "eth0",
+                                "address": "172.16.141.227",
+                                "broadcast": "172.16.255.255",
+                                "netmask": "255.255.0.0",
+                                "network": "172.16.0.0",
+                                "macaddress": "0a:19:2d:d6:ad:ab",
+                                "mtu": 9001,
+                                "type": "ether",
+                                "alias": "eth0"
+                            },
+                            "ansible_default_ipv6": {},
+                            "ansible_all_ipv4_addresses": [
+                                "172.16.141.227"
+                            ],
+                            "ansible_all_ipv6_addresses": [
+                                "fe80::819:2dff:fed6:adab"
+                            ],
+                            "ansible_python": {
+                                "version": {
+                                    "major": 3,
+                                    "minor": 6,
+                                    "micro": 8,
+                                    "releaselevel": "final",
+                                    "serial": 0
+                                },
+                                "version_info": [
+                                    3,
+                                    6,
+                                    8,
+                                    "final",
+                                    0
+                                ],
+                                "executable": "/usr/libexec/platform-python",
+                                "has_sslcontext": true,
+                                "type": "cpython"
+                            },
+                            "ansible_processor": [
+                                "0",
+                                "GenuineIntel",
+                                "Intel(R) Xeon(R) Platinum 8175M CPU @ 2.50GHz",
+                                "1",
+                                "GenuineIntel",
+                                "Intel(R) Xeon(R) Platinum 8175M CPU @ 2.50GHz"
+                            ],
+                            "ansible_processor_count": 1,
+                            "ansible_processor_cores": 1,
+                            "ansible_processor_threads_per_core": 2,
+                            "ansible_processor_vcpus": 2,
+                            "ansible_processor_nproc": 2,
+                            "ansible_memtotal_mb": 782,
+                            "ansible_memfree_mb": 144,
+                            "ansible_swaptotal_mb": 0,
+                            "ansible_swapfree_mb": 0,
+                            "ansible_memory_mb": {
+                                "real": {
+                                    "total": 782,
+                                    "used": 638,
+                                    "free": 144
+                                },
+                                "nocache": {
+                                    "free": 539,
+                                    "used": 243
+                                },
+                                "swap": {
+                                    "total": 0,
+                                    "free": 0,
+                                    "used": 0,
+                                    "cached": 0
+                                }
+                            },
+                            "ansible_bios_date": "10/16/2017",
+                            "ansible_bios_vendor": "Amazon EC2",
+                            "ansible_bios_version": "1.0",
+                            "ansible_board_asset_tag": "i-0983e2cb44f5da850",
+                            "ansible_board_name": "NA",
+                            "ansible_board_serial": "NA",
+                            "ansible_board_vendor": "Amazon EC2",
+                            "ansible_board_version": "NA",
+                            "ansible_chassis_asset_tag": "Amazon EC2",
+                            "ansible_chassis_serial": "NA",
+                            "ansible_chassis_vendor": "Amazon EC2",
+                            "ansible_chassis_version": "NA",
+                            "ansible_form_factor": "Other",
+                            "ansible_product_name": "t3.micro",
+                            "ansible_product_serial": "NA",
+                            "ansible_product_uuid": "NA",
+                            "ansible_product_version": "NA",
+                            "ansible_system_vendor": "Amazon EC2",
+                            "ansible_devices": {
+                                "nvme0n1": {
+                                    "virtual": 1,
+                                    "links": {
+                                        "ids": [
+                                            "nvme-Amazon_Elastic_Block_Store_vol00e3042049ef9a31d",
+                                            "nvme-nvme.1d0f-766f6c3030653330343230343965663961333164-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                                        ],
+                                        "uuids": [],
+                                        "labels": [],
+                                        "masters": []
+                                    },
+                                    "vendor": null,
+                                    "model": "Amazon Elastic Block Store",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "removable": "0",
+                                    "support_discard": "0",
+                                    "partitions": {
+                                        "nvme0n1p1": {
+                                            "links": {
+                                                "ids": [
+                                                    "nvme-Amazon_Elastic_Block_Store_vol00e3042049ef9a31d-part1",
+                                                    "nvme-nvme.1d0f-766f6c3030653330343230343965663961333164-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1",
+                                                    "wwn-nvme.1d0f-766f6c3030653330343230343965663961333164-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                                                ],
+                                                "uuids": [],
+                                                "labels": [],
+                                                "masters": []
+                                            },
+                                            "start": "2048",
+                                            "sectors": "2048",
+                                            "sectorsize": 512,
+                                            "size": "1.00 MB",
+                                            "uuid": null,
+                                            "holders": []
+                                        },
+                                        "nvme0n1p2": {
+                                            "links": {
+                                                "ids": [
+                                                    "nvme-Amazon_Elastic_Block_Store_vol00e3042049ef9a31d-part2",
+                                                    "nvme-nvme.1d0f-766f6c3030653330343230343965663961333164-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2",
+                                                    "wwn-nvme.1d0f-766f6c3030653330343230343965663961333164-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2"
+                                                ],
+                                                "uuids": [
+                                                    "efe0f36a-dcf9-46df-b65b-06a62e750c21"
+                                                ],
+                                                "labels": [],
+                                                "masters": []
+                                            },
+                                            "start": "4096",
+                                            "sectors": "20967391",
+                                            "sectorsize": 512,
+                                            "size": "10.00 GB",
+                                            "uuid": "efe0f36a-dcf9-46df-b65b-06a62e750c21",
+                                            "holders": []
+                                        }
+                                    },
+                                    "rotational": "0",
+                                    "scheduler_mode": "none",
+                                    "sectors": "20971520",
+                                    "sectorsize": "512",
+                                    "size": "10.00 GB",
+                                    "host": "Non-Volatile memory controller: Amazon.com, Inc. Device 8061",
+                                    "holders": []
+                                }
+                            },
+                            "ansible_device_links": {
+                                "ids": {
+                                    "nvme0n1p1": [
+                                        "nvme-Amazon_Elastic_Block_Store_vol00e3042049ef9a31d-part1",
+                                        "nvme-nvme.1d0f-766f6c3030653330343230343965663961333164-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1",
+                                        "wwn-nvme.1d0f-766f6c3030653330343230343965663961333164-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                                    ],
+                                    "nvme0n1p2": [
+                                        "nvme-Amazon_Elastic_Block_Store_vol00e3042049ef9a31d-part2",
+                                        "nvme-nvme.1d0f-766f6c3030653330343230343965663961333164-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2",
+                                        "wwn-nvme.1d0f-766f6c3030653330343230343965663961333164-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2"
+                                    ],
+                                    "nvme0n1": [
+                                        "nvme-Amazon_Elastic_Block_Store_vol00e3042049ef9a31d",
+                                        "nvme-nvme.1d0f-766f6c3030653330343230343965663961333164-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                                    ]
+                                },
+                                "uuids": {
+                                    "nvme0n1p2": [
+                                        "efe0f36a-dcf9-46df-b65b-06a62e750c21"
+                                    ]
+                                },
+                                "labels": {},
+                                "masters": {}
+                            },
+                            "ansible_uptime_seconds": 195452,
+                            "ansible_mounts": [
+                                {
+                                    "mount": "/",
+                                    "device": "/dev/nvme0n1p2",
+                                    "fstype": "xfs",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+                                    "size_total": 10724814848,
+                                    "size_available": 9069391872,
+                                    "block_size": 4096,
+                                    "block_total": 2618363,
+                                    "block_available": 2214207,
+                                    "block_used": 404156,
+                                    "inode_total": 5241840,
+                                    "inode_available": 5199872,
+                                    "inode_used": 41968,
+                                    "uuid": "efe0f36a-dcf9-46df-b65b-06a62e750c21"
+                                }
+                            ],
+                            "ansible_dns": {
+                                "search": [
+                                    "ec2.internal"
+                                ],
+                                "nameservers": [
+                                    "172.16.0.2"
+                                ]
+                            },
+                            "ansible_service_mgr": "systemd",
+                            "ansible_local": {},
+                            "gather_subset": [
+                                "all"
+                            ],
+                            "module_setup": true,
+                            "discovered_interpreter_python": "/usr/libexec/platform-python"
+                        },
+                        "warnings": [],
+                        "deprecations": [],
+                        "_ansible_verbose_override": true,
+                        "_ansible_no_log": false,
+                        "changed": false
+                    },
+                    "start": "2021-03-17T21:02:03.452956",
+                    "end": "2021-03-17T21:02:06.200283",
+                    "duration": 2.747327,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Gathering Facts",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-00000000000e",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/home/student1/ntp_demo/site2.yaml:1",
+                    "host": "node3",
+                    "uuid": "d9ca9c2e-e773-455f-b8c4-c555fb5b3b86",
+                    "__host": "node3",
+                    "__result": "OK",
+                    "__changed": false,
+                    "__duration": "1s",
+                    "__number": 2,
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "remote_addr": "node3",
+                    "res": {
+                        "ansible_facts": {
+                            "ansible_user_id": "student1",
+                            "ansible_user_uid": 1001,
+                            "ansible_user_gid": 1001,
+                            "ansible_user_gecos": "",
+                            "ansible_user_dir": "/home/student1",
+                            "ansible_user_shell": "/bin/bash",
+                            "ansible_real_user_id": 1001,
+                            "ansible_effective_user_id": 1001,
+                            "ansible_real_group_id": 1001,
+                            "ansible_effective_group_id": 1001,
+                            "ansible_distribution": "RedHat",
+                            "ansible_distribution_release": "Ootpa",
+                            "ansible_distribution_version": "8.3",
+                            "ansible_distribution_major_version": "8",
+                            "ansible_distribution_file_path": "/etc/redhat-release",
+                            "ansible_distribution_file_variety": "RedHat",
+                            "ansible_distribution_file_parsed": true,
+                            "ansible_distribution_file_search_string": "Red Hat",
+                            "ansible_os_family": "RedHat",
+                            "ansible_system": "Linux",
+                            "ansible_kernel": "4.18.0-240.15.1.el8_3.x86_64",
+                            "ansible_kernel_version": "#1 SMP Wed Feb 3 03:12:15 EST 2021",
+                            "ansible_machine": "x86_64",
+                            "ansible_python_version": "3.6.8",
+                            "ansible_fqdn": "node3.example.com",
+                            "ansible_hostname": "node3",
+                            "ansible_nodename": "node3",
+                            "ansible_domain": "example.com",
+                            "ansible_userspace_bits": "64",
+                            "ansible_architecture": "x86_64",
+                            "ansible_userspace_architecture": "x86_64",
+                            "ansible_machine_id": "ec2e4dc6c3c06af9358bdd5fc82b87cf",
+                            "ansible_virtualization_role": "guest",
+                            "ansible_virtualization_type": "kvm",
+                            "ansible_virtualization_tech_guest": [
+                                "kvm"
+                            ],
+                            "ansible_virtualization_tech_host": [],
+                            "ansible_apparmor": {
+                                "status": "disabled"
+                            },
+                            "ansible_fibre_channel_wwn": [],
+                            "ansible_system_capabilities_enforced": "True",
+                            "ansible_system_capabilities": [
+                                ""
+                            ],
+                            "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQDkWRRS2t65baBwGgQD5KehlmWHX5gNHOrWQboroG9yGFORdQzW0BR5zzA8k1eRosEvSHCrWLfReTkilIIAnK/2Ch37c9hEgdR+fjlhK/k49M56TsjtGC5XhNAeKHel5V4Bo92/rATs6yiWRUhLmWU6b/HiWfmACfKQ7MY9kfjIOpxd9htm+zpVq8pi9dE4YTbfTMxTCJ3v+QwQ+tdEY8QpoHXhNtFIAG+8ZlgRz9XNTlMbVJfQ2bGLY27V9Mu/h1d9gaiH7FG+oE5cFM4jOUFRuBR94ozzFWnWFalCw8LjBcPkOP5Je09gbg1r/27ggYKx9Rda0Ao5AwDeV1o5J88Z/iYFU6tQVIz67FP4KbIPskv3Wi9GwUfgGV54JJ1AyWrIp732zQPxZtcBUyp44niv5bA6Ga0hH5g0tnkFKl43k/XBknIoWJigKM8ojbpD/apnL725B49UqF3Eguw4Nr/GD2uOgRrGRD9zGOnmIsqPnzS5PMwtFxEgd9/ouK7IymM=",
+                            "ansible_ssh_host_key_rsa_public_keytype": "ssh-rsa",
+                            "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKA729T3f3rAcukJNCZIftZ3AWixUS/4YAz6VaaCvvA8tVvgUxAlPRZnV6T/CR4XooT3trtv4GXGQDYf1+ksWbo=",
+                            "ansible_ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
+                            "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIMlr9RAJF3gvjN2Weyg1cAoSIR1WZpmD5Fu7/t9GR25P",
+                            "ansible_ssh_host_key_ed25519_public_keytype": "ssh-ed25519",
+                            "ansible_python": {
+                                "version": {
+                                    "major": 3,
+                                    "minor": 6,
+                                    "micro": 8,
+                                    "releaselevel": "final",
+                                    "serial": 0
+                                },
+                                "version_info": [
+                                    3,
+                                    6,
+                                    8,
+                                    "final",
+                                    0
+                                ],
+                                "executable": "/usr/libexec/platform-python",
+                                "has_sslcontext": true,
+                                "type": "cpython"
+                            },
+                            "ansible_is_chroot": false,
+                            "ansible_iscsi_iqn": "",
+                            "ansible_local": {},
+                            "ansible_selinux_python_present": true,
+                            "ansible_selinux": {
+                                "status": "enabled",
+                                "policyvers": 32,
+                                "config_mode": "enforcing",
+                                "mode": "enforcing",
+                                "type": "targeted"
+                            },
+                            "ansible_date_time": {
+                                "year": "2021",
+                                "month": "03",
+                                "weekday": "Wednesday",
+                                "weekday_number": "3",
+                                "weeknumber": "11",
+                                "day": "17",
+                                "hour": "21",
+                                "minute": "02",
+                                "second": "04",
+                                "epoch": "1616014924",
+                                "date": "2021-03-17",
+                                "time": "21:02:04",
+                                "iso8601_micro": "2021-03-17T21:02:04.860070Z",
+                                "iso8601": "2021-03-17T21:02:04Z",
+                                "iso8601_basic": "20210317T210204860070",
+                                "iso8601_basic_short": "20210317T210204",
+                                "tz": "UTC",
+                                "tz_dst": "UTC",
+                                "tz_offset": "+0000"
+                            },
+                            "ansible_fips": false,
+                            "ansible_processor": [
+                                "0",
+                                "GenuineIntel",
+                                "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz",
+                                "1",
+                                "GenuineIntel",
+                                "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz"
+                            ],
+                            "ansible_processor_count": 1,
+                            "ansible_processor_cores": 1,
+                            "ansible_processor_threads_per_core": 2,
+                            "ansible_processor_vcpus": 2,
+                            "ansible_processor_nproc": 2,
+                            "ansible_memtotal_mb": 782,
+                            "ansible_memfree_mb": 214,
+                            "ansible_swaptotal_mb": 0,
+                            "ansible_swapfree_mb": 0,
+                            "ansible_memory_mb": {
+                                "real": {
+                                    "total": 782,
+                                    "used": 568,
+                                    "free": 214
+                                },
+                                "nocache": {
+                                    "free": 573,
+                                    "used": 209
+                                },
+                                "swap": {
+                                    "total": 0,
+                                    "free": 0,
+                                    "used": 0,
+                                    "cached": 0
+                                }
+                            },
+                            "ansible_bios_date": "10/16/2017",
+                            "ansible_bios_vendor": "Amazon EC2",
+                            "ansible_bios_version": "1.0",
+                            "ansible_board_asset_tag": "i-0b5253c3ac68b41ec",
+                            "ansible_board_name": "NA",
+                            "ansible_board_serial": "NA",
+                            "ansible_board_vendor": "Amazon EC2",
+                            "ansible_board_version": "NA",
+                            "ansible_chassis_asset_tag": "Amazon EC2",
+                            "ansible_chassis_serial": "NA",
+                            "ansible_chassis_vendor": "Amazon EC2",
+                            "ansible_chassis_version": "NA",
+                            "ansible_form_factor": "Other",
+                            "ansible_product_name": "t3.micro",
+                            "ansible_product_serial": "NA",
+                            "ansible_product_uuid": "NA",
+                            "ansible_product_version": "NA",
+                            "ansible_system_vendor": "Amazon EC2",
+                            "ansible_devices": {
+                                "nvme0n1": {
+                                    "virtual": 1,
+                                    "links": {
+                                        "ids": [
+                                            "nvme-Amazon_Elastic_Block_Store_vol074c3e539cca55245",
+                                            "nvme-nvme.1d0f-766f6c3037346333653533396363613535323435-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                                        ],
+                                        "uuids": [],
+                                        "labels": [],
+                                        "masters": []
+                                    },
+                                    "vendor": null,
+                                    "model": "Amazon Elastic Block Store",
+                                    "sas_address": null,
+                                    "sas_device_handle": null,
+                                    "removable": "0",
+                                    "support_discard": "0",
+                                    "partitions": {
+                                        "nvme0n1p1": {
+                                            "links": {
+                                                "ids": [
+                                                    "nvme-Amazon_Elastic_Block_Store_vol074c3e539cca55245-part1",
+                                                    "nvme-nvme.1d0f-766f6c3037346333653533396363613535323435-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1",
+                                                    "wwn-nvme.1d0f-766f6c3037346333653533396363613535323435-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                                                ],
+                                                "uuids": [],
+                                                "labels": [],
+                                                "masters": []
+                                            },
+                                            "start": "2048",
+                                            "sectors": "2048",
+                                            "sectorsize": 512,
+                                            "size": "1.00 MB",
+                                            "uuid": null,
+                                            "holders": []
+                                        },
+                                        "nvme0n1p2": {
+                                            "links": {
+                                                "ids": [
+                                                    "nvme-Amazon_Elastic_Block_Store_vol074c3e539cca55245-part2",
+                                                    "nvme-nvme.1d0f-766f6c3037346333653533396363613535323435-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2",
+                                                    "wwn-nvme.1d0f-766f6c3037346333653533396363613535323435-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2"
+                                                ],
+                                                "uuids": [
+                                                    "efe0f36a-dcf9-46df-b65b-06a62e750c21"
+                                                ],
+                                                "labels": [],
+                                                "masters": []
+                                            },
+                                            "start": "4096",
+                                            "sectors": "20967391",
+                                            "sectorsize": 512,
+                                            "size": "10.00 GB",
+                                            "uuid": "efe0f36a-dcf9-46df-b65b-06a62e750c21",
+                                            "holders": []
+                                        }
+                                    },
+                                    "rotational": "0",
+                                    "scheduler_mode": "none",
+                                    "sectors": "20971520",
+                                    "sectorsize": "512",
+                                    "size": "10.00 GB",
+                                    "host": "Non-Volatile memory controller: Amazon.com, Inc. Device 8061",
+                                    "holders": []
+                                }
+                            },
+                            "ansible_device_links": {
+                                "ids": {
+                                    "nvme0n1p1": [
+                                        "nvme-Amazon_Elastic_Block_Store_vol074c3e539cca55245-part1",
+                                        "nvme-nvme.1d0f-766f6c3037346333653533396363613535323435-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1",
+                                        "wwn-nvme.1d0f-766f6c3037346333653533396363613535323435-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part1"
+                                    ],
+                                    "nvme0n1p2": [
+                                        "nvme-Amazon_Elastic_Block_Store_vol074c3e539cca55245-part2",
+                                        "nvme-nvme.1d0f-766f6c3037346333653533396363613535323435-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2",
+                                        "wwn-nvme.1d0f-766f6c3037346333653533396363613535323435-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001-part2"
+                                    ],
+                                    "nvme0n1": [
+                                        "nvme-Amazon_Elastic_Block_Store_vol074c3e539cca55245",
+                                        "nvme-nvme.1d0f-766f6c3037346333653533396363613535323435-416d617a6f6e20456c617374696320426c6f636b2053746f7265-00000001"
+                                    ]
+                                },
+                                "uuids": {
+                                    "nvme0n1p2": [
+                                        "efe0f36a-dcf9-46df-b65b-06a62e750c21"
+                                    ]
+                                },
+                                "labels": {},
+                                "masters": {}
+                            },
+                            "ansible_uptime_seconds": 195435,
+                            "ansible_mounts": [
+                                {
+                                    "mount": "/",
+                                    "device": "/dev/nvme0n1p2",
+                                    "fstype": "xfs",
+                                    "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+                                    "size_total": 10724814848,
+                                    "size_available": 9090736128,
+                                    "block_size": 4096,
+                                    "block_total": 2618363,
+                                    "block_available": 2219418,
+                                    "block_used": 398945,
+                                    "inode_total": 5241840,
+                                    "inode_available": 5200495,
+                                    "inode_used": 41345,
+                                    "uuid": "efe0f36a-dcf9-46df-b65b-06a62e750c21"
+                                }
+                            ],
+                            "ansible_lsb": {},
+                            "ansible_hostnqn": "",
+                            "ansible_dns": {
+                                "search": [
+                                    "ec2.internal"
+                                ],
+                                "nameservers": [
+                                    "172.16.0.2"
+                                ]
+                            },
+                            "ansible_cmdline": {
+                                "BOOT_IMAGE": "(hd0,gpt2)/boot/vmlinuz-4.18.0-240.15.1.el8_3.x86_64",
+                                "root": "UUID=efe0f36a-dcf9-46df-b65b-06a62e750c21",
+                                "ro": true,
+                                "console": "tty0",
+                                "net.ifnames": "0",
+                                "rd.blacklist": "nouveau",
+                                "nvme_core.io_timeout": "4294967295",
+                                "crashkernel": "auto"
+                            },
+                            "ansible_proc_cmdline": {
+                                "BOOT_IMAGE": "(hd0,gpt2)/boot/vmlinuz-4.18.0-240.15.1.el8_3.x86_64",
+                                "root": "UUID=efe0f36a-dcf9-46df-b65b-06a62e750c21",
+                                "ro": true,
+                                "console": [
+                                    "ttyS0,115200n8",
+                                    "tty0"
+                                ],
+                                "net.ifnames": "0",
+                                "rd.blacklist": "nouveau",
+                                "nvme_core.io_timeout": "4294967295",
+                                "crashkernel": "auto"
+                            },
+                            "ansible_service_mgr": "systemd",
+                            "ansible_interfaces": [
+                                "eth0",
+                                "lo"
+                            ],
+                            "ansible_eth0": {
+                                "device": "eth0",
+                                "macaddress": "0a:a4:61:51:00:65",
+                                "mtu": 9001,
+                                "active": true,
+                                "module": "ena",
+                                "type": "ether",
+                                "pciid": "0000:00:05.0",
+                                "promisc": false,
+                                "ipv4": {
+                                    "address": "172.16.255.88",
+                                    "broadcast": "172.16.255.255",
+                                    "netmask": "255.255.0.0",
+                                    "network": "172.16.0.0"
+                                },
+                                "ipv6": [
+                                    {
+                                        "address": "fe80::8a4:61ff:fe51:65",
+                                        "prefix": "64",
+                                        "scope": "link"
+                                    }
+                                ],
+                                "features": {
+                                    "rx_checksumming": "off [fixed]",
+                                    "tx_checksumming": "on",
+                                    "tx_checksum_ipv4": "on",
+                                    "tx_checksum_ip_generic": "off [fixed]",
+                                    "tx_checksum_ipv6": "off [fixed]",
+                                    "tx_checksum_fcoe_crc": "off [fixed]",
+                                    "tx_checksum_sctp": "off [fixed]",
+                                    "scatter_gather": "on",
+                                    "tx_scatter_gather": "on",
+                                    "tx_scatter_gather_fraglist": "off [fixed]",
+                                    "tcp_segmentation_offload": "off",
+                                    "tx_tcp_segmentation": "off [fixed]",
+                                    "tx_tcp_ecn_segmentation": "off [fixed]",
+                                    "tx_tcp_mangleid_segmentation": "off [fixed]",
+                                    "tx_tcp6_segmentation": "off [fixed]",
+                                    "generic_segmentation_offload": "on",
+                                    "generic_receive_offload": "on",
+                                    "large_receive_offload": "off [fixed]",
+                                    "rx_vlan_offload": "off [fixed]",
+                                    "tx_vlan_offload": "off [fixed]",
+                                    "ntuple_filters": "off [fixed]",
+                                    "receive_hashing": "on",
+                                    "highdma": "on",
+                                    "rx_vlan_filter": "off [fixed]",
+                                    "vlan_challenged": "off [fixed]",
+                                    "tx_lockless": "off [fixed]",
+                                    "netns_local": "off [fixed]",
+                                    "tx_gso_robust": "off [fixed]",
+                                    "tx_fcoe_segmentation": "off [fixed]",
+                                    "tx_gre_segmentation": "off [fixed]",
+                                    "tx_gre_csum_segmentation": "off [fixed]",
+                                    "tx_ipxip4_segmentation": "off [fixed]",
+                                    "tx_ipxip6_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                                    "tx_gso_partial": "off [fixed]",
+                                    "tx_sctp_segmentation": "off [fixed]",
+                                    "tx_esp_segmentation": "off [fixed]",
+                                    "tx_udp_segmentation": "off [fixed]",
+                                    "tls_hw_rx_offload": "off [fixed]",
+                                    "fcoe_mtu": "off [fixed]",
+                                    "tx_nocache_copy": "off",
+                                    "loopback": "off [fixed]",
+                                    "rx_fcs": "off [fixed]",
+                                    "rx_all": "off [fixed]",
+                                    "tx_vlan_stag_hw_insert": "off [fixed]",
+                                    "rx_vlan_stag_hw_parse": "off [fixed]",
+                                    "rx_vlan_stag_filter": "off [fixed]",
+                                    "l2_fwd_offload": "off [fixed]",
+                                    "hw_tc_offload": "off [fixed]",
+                                    "esp_hw_offload": "off [fixed]",
+                                    "esp_tx_csum_hw_offload": "off [fixed]",
+                                    "rx_udp_tunnel_port_offload": "off [fixed]",
+                                    "tls_hw_tx_offload": "off [fixed]",
+                                    "rx_gro_hw": "off [fixed]",
+                                    "tls_hw_record": "off [fixed]"
+                                },
+                                "timestamping": [
+                                    "rx_software",
+                                    "software"
+                                ],
+                                "hw_timestamp_filters": []
+                            },
+                            "ansible_lo": {
+                                "device": "lo",
+                                "mtu": 65536,
+                                "active": true,
+                                "type": "loopback",
+                                "promisc": false,
+                                "ipv4": {
+                                    "address": "127.0.0.1",
+                                    "broadcast": "",
+                                    "netmask": "255.0.0.0",
+                                    "network": "127.0.0.0"
+                                },
+                                "ipv6": [
+                                    {
+                                        "address": "::1",
+                                        "prefix": "128",
+                                        "scope": "host"
+                                    }
+                                ],
+                                "features": {
+                                    "rx_checksumming": "on [fixed]",
+                                    "tx_checksumming": "on",
+                                    "tx_checksum_ipv4": "off [fixed]",
+                                    "tx_checksum_ip_generic": "on [fixed]",
+                                    "tx_checksum_ipv6": "off [fixed]",
+                                    "tx_checksum_fcoe_crc": "off [fixed]",
+                                    "tx_checksum_sctp": "on [fixed]",
+                                    "scatter_gather": "on",
+                                    "tx_scatter_gather": "on [fixed]",
+                                    "tx_scatter_gather_fraglist": "on [fixed]",
+                                    "tcp_segmentation_offload": "on",
+                                    "tx_tcp_segmentation": "on",
+                                    "tx_tcp_ecn_segmentation": "on",
+                                    "tx_tcp_mangleid_segmentation": "on",
+                                    "tx_tcp6_segmentation": "on",
+                                    "generic_segmentation_offload": "on",
+                                    "generic_receive_offload": "on",
+                                    "large_receive_offload": "off [fixed]",
+                                    "rx_vlan_offload": "off [fixed]",
+                                    "tx_vlan_offload": "off [fixed]",
+                                    "ntuple_filters": "off [fixed]",
+                                    "receive_hashing": "off [fixed]",
+                                    "highdma": "on [fixed]",
+                                    "rx_vlan_filter": "off [fixed]",
+                                    "vlan_challenged": "on [fixed]",
+                                    "tx_lockless": "on [fixed]",
+                                    "netns_local": "on [fixed]",
+                                    "tx_gso_robust": "off [fixed]",
+                                    "tx_fcoe_segmentation": "off [fixed]",
+                                    "tx_gre_segmentation": "off [fixed]",
+                                    "tx_gre_csum_segmentation": "off [fixed]",
+                                    "tx_ipxip4_segmentation": "off [fixed]",
+                                    "tx_ipxip6_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_segmentation": "off [fixed]",
+                                    "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                                    "tx_gso_partial": "off [fixed]",
+                                    "tx_sctp_segmentation": "on",
+                                    "tx_esp_segmentation": "off [fixed]",
+                                    "tx_udp_segmentation": "off [fixed]",
+                                    "tls_hw_rx_offload": "off [fixed]",
+                                    "fcoe_mtu": "off [fixed]",
+                                    "tx_nocache_copy": "off [fixed]",
+                                    "loopback": "on [fixed]",
+                                    "rx_fcs": "off [fixed]",
+                                    "rx_all": "off [fixed]",
+                                    "tx_vlan_stag_hw_insert": "off [fixed]",
+                                    "rx_vlan_stag_hw_parse": "off [fixed]",
+                                    "rx_vlan_stag_filter": "off [fixed]",
+                                    "l2_fwd_offload": "off [fixed]",
+                                    "hw_tc_offload": "off [fixed]",
+                                    "esp_hw_offload": "off [fixed]",
+                                    "esp_tx_csum_hw_offload": "off [fixed]",
+                                    "rx_udp_tunnel_port_offload": "off [fixed]",
+                                    "tls_hw_tx_offload": "off [fixed]",
+                                    "rx_gro_hw": "off [fixed]",
+                                    "tls_hw_record": "off [fixed]"
+                                },
+                                "timestamping": [
+                                    "tx_software",
+                                    "rx_software",
+                                    "software"
+                                ],
+                                "hw_timestamp_filters": []
+                            },
+                            "ansible_default_ipv4": {
+                                "gateway": "172.16.0.1",
+                                "interface": "eth0",
+                                "address": "172.16.255.88",
+                                "broadcast": "172.16.255.255",
+                                "netmask": "255.255.0.0",
+                                "network": "172.16.0.0",
+                                "macaddress": "0a:a4:61:51:00:65",
+                                "mtu": 9001,
+                                "type": "ether",
+                                "alias": "eth0"
+                            },
+                            "ansible_default_ipv6": {},
+                            "ansible_all_ipv4_addresses": [
+                                "172.16.255.88"
+                            ],
+                            "ansible_all_ipv6_addresses": [
+                                "fe80::8a4:61ff:fe51:65"
+                            ],
+                            "ansible_pkg_mgr": "dnf",
+                            "gather_subset": [
+                                "all"
+                            ],
+                            "module_setup": true,
+                            "discovered_interpreter_python": "/usr/libexec/platform-python"
+                        },
+                        "warnings": [],
+                        "deprecations": [],
+                        "_ansible_verbose_override": true,
+                        "_ansible_no_log": false,
+                        "changed": false
+                    },
+                    "start": "2021-03-17T21:02:03.493192",
+                    "end": "2021-03-17T21:02:05.104302",
+                    "duration": 1.61111,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "include_role",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-00000000000a",
+                    "task_action": "include_role",
+                    "task_args": "",
+                    "task_path": "/home/student1/ntp_demo/site2.yaml:4",
+                    "host": "node1",
+                    "uuid": "ec441487-42a9-47e1-a378-b7b25c26eca7",
+                    "__host": "node1",
+                    "__result": "OK",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 3,
+                    "__task": "include_role",
+                    "__task_action": "include_role",
+                    "remote_addr": "node1",
+                    "res": {
+                        "include_args": {
+                            "name": "brad.foo.ntp"
+                        },
+                        "changed": false
+                    },
+                    "start": "2021-03-17T21:02:06.226433",
+                    "end": "2021-03-17T21:02:06.244747",
+                    "duration": 0.018314,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "include_role",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-00000000000a",
+                    "task_action": "include_role",
+                    "task_args": "",
+                    "task_path": "/home/student1/ntp_demo/site2.yaml:4",
+                    "host": "node2",
+                    "uuid": "6e3d1430-a75d-4b1f-bde4-a61d14bc35c8",
+                    "__host": "node2",
+                    "__result": "OK",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 4,
+                    "__task": "include_role",
+                    "__task_action": "include_role",
+                    "remote_addr": "node2",
+                    "res": {
+                        "include_args": {
+                            "name": "brad.foo.ntp"
+                        },
+                        "changed": false
+                    },
+                    "start": "2021-03-17T21:02:06.240262",
+                    "end": "2021-03-17T21:02:06.264227",
+                    "duration": 0.023965,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "include_role",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-00000000000a",
+                    "task_action": "include_role",
+                    "task_args": "",
+                    "task_path": "/home/student1/ntp_demo/site2.yaml:4",
+                    "host": "node3",
+                    "uuid": "7735747f-00c7-4e27-ac38-bff145adaa4d",
+                    "__host": "node3",
+                    "__result": "OK",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 5,
+                    "__task": "include_role",
+                    "__task_action": "include_role",
+                    "remote_addr": "node3",
+                    "res": {
+                        "include_args": {
+                            "name": "brad.foo.ntp"
+                        },
+                        "changed": false
+                    },
+                    "start": "2021-03-17T21:02:06.259747",
+                    "end": "2021-03-17T21:02:06.271794",
+                    "duration": 0.012047,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Collect the current NTP configuration",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000030",
+                    "task_action": "ansible.utils.cli_parse",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:2",
+                    "role": "ntp",
+                    "host": "node1",
+                    "uuid": "1888f19e-79b4-4958-9943-363537b8047c",
+                    "__host": "node1",
+                    "__result": "OK",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 6,
+                    "__task": "Collect the current NTP configuration",
+                    "__task_action": "ansible.utils.cli_parse",
+                    "remote_addr": "node1",
+                    "res": {
+                        "stdout": "# Use public servers from the pool.ntp.org project.\r\n# Please consider joining the pool (http://www.pool.ntp.org/join.html).\r\n\r\n\r\nserver 0.rhel.pool.ntp.org iburst\r\nserver 1.rhel.pool.ntp.org iburst\r\nserver 2.rhel.pool.ntp.org iburst\r\nserver 3.rhel.pool.ntp.org iburst\r\n\r\n# Record the rate at which the system clock gains/losses time.\r\ndriftfile /var/lib/chrony/drift\r\n\r\n# Allow the system clock to be stepped in the first three updates\r\n# if its offset is larger than 1 second.\r\nmakestep 1.0 3\r\n\r\n# Enable kernel synchronization of the real-time clock (RTC).\r\nrtcsync\r\n\r\n# Enable hardware timestamping on all interfaces that support it.\r\n#hwtimestamp *\r\n\r\n# Increase the minimum number of selectable sources required to adjust\r\n# the system clock.\r\n#minsources 2\r\n\r\n# Allow NTP client access from local network.\r\n#allow 192.168.0.0/16\r\n\r\n# Serve time even if not synchronized to a time source.\r\n#local stratum 10\r\n\r\n# Specify file containing keys for NTP authentication.\r\nkeyfile /etc/chrony.keys\r\n\r\n# Get TAI-UTC offset and leap seconds from the system tz database.\r\nleapsectz right/UTC\r\n\r\n# Specify directory for log files.\r\nlogdir /var/log/chrony\r\n\r\n# Select which information is logged.\r\n#log measurements statistics tracking\r\n",
+                        "stdout_lines": [
+                            "# Use public servers from the pool.ntp.org project.",
+                            "# Please consider joining the pool (http://www.pool.ntp.org/join.html).",
+                            "",
+                            "",
+                            "server 0.rhel.pool.ntp.org iburst",
+                            "server 1.rhel.pool.ntp.org iburst",
+                            "server 2.rhel.pool.ntp.org iburst",
+                            "server 3.rhel.pool.ntp.org iburst",
+                            "",
+                            "# Record the rate at which the system clock gains/losses time.",
+                            "driftfile /var/lib/chrony/drift",
+                            "",
+                            "# Allow the system clock to be stepped in the first three updates",
+                            "# if its offset is larger than 1 second.",
+                            "makestep 1.0 3",
+                            "",
+                            "# Enable kernel synchronization of the real-time clock (RTC).",
+                            "rtcsync",
+                            "",
+                            "# Enable hardware timestamping on all interfaces that support it.",
+                            "#hwtimestamp *",
+                            "",
+                            "# Increase the minimum number of selectable sources required to adjust",
+                            "# the system clock.",
+                            "#minsources 2",
+                            "",
+                            "# Allow NTP client access from local network.",
+                            "#allow 192.168.0.0/16",
+                            "",
+                            "# Serve time even if not synchronized to a time source.",
+                            "#local stratum 10",
+                            "",
+                            "# Specify file containing keys for NTP authentication.",
+                            "keyfile /etc/chrony.keys",
+                            "",
+                            "# Get TAI-UTC offset and leap seconds from the system tz database.",
+                            "leapsectz right/UTC",
+                            "",
+                            "# Specify directory for log files.",
+                            "logdir /var/log/chrony",
+                            "",
+                            "# Select which information is logged.",
+                            "#log measurements statistics tracking"
+                        ],
+                        "parsed": {
+                            "servers": [
+                                {
+                                    "name": "0.rhel.pool.ntp.org",
+                                    "params": [
+                                        "iburst"
+                                    ]
+                                },
+                                {
+                                    "name": "1.rhel.pool.ntp.org",
+                                    "params": [
+                                        "iburst"
+                                    ]
+                                },
+                                {
+                                    "name": "2.rhel.pool.ntp.org",
+                                    "params": [
+                                        "iburst"
+                                    ]
+                                },
+                                {
+                                    "name": "3.rhel.pool.ntp.org",
+                                    "params": [
+                                        "iburst"
+                                    ]
+                                }
+                            ]
+                        },
+                        "ansible_facts": {
+                            "original_ntp_configuration": {
+                                "servers": [
+                                    {
+                                        "name": "0.rhel.pool.ntp.org",
+                                        "params": [
+                                            "iburst"
+                                        ]
+                                    },
+                                    {
+                                        "name": "1.rhel.pool.ntp.org",
+                                        "params": [
+                                            "iburst"
+                                        ]
+                                    },
+                                    {
+                                        "name": "2.rhel.pool.ntp.org",
+                                        "params": [
+                                            "iburst"
+                                        ]
+                                    },
+                                    {
+                                        "name": "3.rhel.pool.ntp.org",
+                                        "params": [
+                                            "iburst"
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "_ansible_no_log": false,
+                        "changed": false
+                    },
+                    "start": "2021-03-17T21:02:06.338395",
+                    "end": "2021-03-17T21:02:06.584727",
+                    "duration": 0.246332,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Collect the current NTP configuration",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000030",
+                    "task_action": "ansible.utils.cli_parse",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:2",
+                    "role": "ntp",
+                    "host": "node2",
+                    "uuid": "5adc6360-d022-4be4-a237-099c651c115b",
+                    "__host": "node2",
+                    "__result": "OK",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 7,
+                    "__task": "Collect the current NTP configuration",
+                    "__task_action": "ansible.utils.cli_parse",
+                    "remote_addr": "node2",
+                    "res": {
+                        "stdout": "# Use public servers from the pool.ntp.org project.\r\n# Please consider joining the pool (http://www.pool.ntp.org/join.html).\r\n\r\n\r\nserver 0.rhel.pool.ntp.org iburst\r\nserver 1.rhel.pool.ntp.org iburst\r\nserver 2.rhel.pool.ntp.org iburst\r\nserver 3.rhel.pool.ntp.org iburst\r\n\r\n# Record the rate at which the system clock gains/losses time.\r\ndriftfile /var/lib/chrony/drift\r\n\r\n# Allow the system clock to be stepped in the first three updates\r\n# if its offset is larger than 1 second.\r\nmakestep 1.0 3\r\n\r\n# Enable kernel synchronization of the real-time clock (RTC).\r\nrtcsync\r\n\r\n# Enable hardware timestamping on all interfaces that support it.\r\n#hwtimestamp *\r\n\r\n# Increase the minimum number of selectable sources required to adjust\r\n# the system clock.\r\n#minsources 2\r\n\r\n# Allow NTP client access from local network.\r\n#allow 192.168.0.0/16\r\n\r\n# Serve time even if not synchronized to a time source.\r\n#local stratum 10\r\n\r\n# Specify file containing keys for NTP authentication.\r\nkeyfile /etc/chrony.keys\r\n\r\n# Get TAI-UTC offset and leap seconds from the system tz database.\r\nleapsectz right/UTC\r\n\r\n# Specify directory for log files.\r\nlogdir /var/log/chrony\r\n\r\n# Select which information is logged.\r\n#log measurements statistics tracking\r\n",
+                        "stdout_lines": [
+                            "# Use public servers from the pool.ntp.org project.",
+                            "# Please consider joining the pool (http://www.pool.ntp.org/join.html).",
+                            "",
+                            "",
+                            "server 0.rhel.pool.ntp.org iburst",
+                            "server 1.rhel.pool.ntp.org iburst",
+                            "server 2.rhel.pool.ntp.org iburst",
+                            "server 3.rhel.pool.ntp.org iburst",
+                            "",
+                            "# Record the rate at which the system clock gains/losses time.",
+                            "driftfile /var/lib/chrony/drift",
+                            "",
+                            "# Allow the system clock to be stepped in the first three updates",
+                            "# if its offset is larger than 1 second.",
+                            "makestep 1.0 3",
+                            "",
+                            "# Enable kernel synchronization of the real-time clock (RTC).",
+                            "rtcsync",
+                            "",
+                            "# Enable hardware timestamping on all interfaces that support it.",
+                            "#hwtimestamp *",
+                            "",
+                            "# Increase the minimum number of selectable sources required to adjust",
+                            "# the system clock.",
+                            "#minsources 2",
+                            "",
+                            "# Allow NTP client access from local network.",
+                            "#allow 192.168.0.0/16",
+                            "",
+                            "# Serve time even if not synchronized to a time source.",
+                            "#local stratum 10",
+                            "",
+                            "# Specify file containing keys for NTP authentication.",
+                            "keyfile /etc/chrony.keys",
+                            "",
+                            "# Get TAI-UTC offset and leap seconds from the system tz database.",
+                            "leapsectz right/UTC",
+                            "",
+                            "# Specify directory for log files.",
+                            "logdir /var/log/chrony",
+                            "",
+                            "# Select which information is logged.",
+                            "#log measurements statistics tracking"
+                        ],
+                        "parsed": {
+                            "servers": [
+                                {
+                                    "name": "0.rhel.pool.ntp.org",
+                                    "params": [
+                                        "iburst"
+                                    ]
+                                },
+                                {
+                                    "name": "1.rhel.pool.ntp.org",
+                                    "params": [
+                                        "iburst"
+                                    ]
+                                },
+                                {
+                                    "name": "2.rhel.pool.ntp.org",
+                                    "params": [
+                                        "iburst"
+                                    ]
+                                },
+                                {
+                                    "name": "3.rhel.pool.ntp.org",
+                                    "params": [
+                                        "iburst"
+                                    ]
+                                }
+                            ]
+                        },
+                        "ansible_facts": {
+                            "original_ntp_configuration": {
+                                "servers": [
+                                    {
+                                        "name": "0.rhel.pool.ntp.org",
+                                        "params": [
+                                            "iburst"
+                                        ]
+                                    },
+                                    {
+                                        "name": "1.rhel.pool.ntp.org",
+                                        "params": [
+                                            "iburst"
+                                        ]
+                                    },
+                                    {
+                                        "name": "2.rhel.pool.ntp.org",
+                                        "params": [
+                                            "iburst"
+                                        ]
+                                    },
+                                    {
+                                        "name": "3.rhel.pool.ntp.org",
+                                        "params": [
+                                            "iburst"
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "_ansible_no_log": false,
+                        "changed": false
+                    },
+                    "start": "2021-03-17T21:02:06.354052",
+                    "end": "2021-03-17T21:02:06.567340",
+                    "duration": 0.213288,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Collect the current NTP configuration",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000030",
+                    "task_action": "ansible.utils.cli_parse",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:2",
+                    "role": "ntp",
+                    "host": "node3",
+                    "uuid": "1d2918f6-e619-412f-bfb1-4891666006de",
+                    "__host": "node3",
+                    "__result": "OK",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 8,
+                    "__task": "Collect the current NTP configuration",
+                    "__task_action": "ansible.utils.cli_parse",
+                    "remote_addr": "node3",
+                    "res": {
+                        "stdout": "# Use public servers from the pool.ntp.org project.\r\n# Please consider joining the pool (http://www.pool.ntp.org/join.html).\r\n\r\n\r\nserver 0.rhel.pool.ntp.org iburst\r\nserver 1.rhel.pool.ntp.org iburst\r\nserver 2.rhel.pool.ntp.org iburst\r\nserver 3.rhel.pool.ntp.org iburst\r\n\r\n# Record the rate at which the system clock gains/losses time.\r\ndriftfile /var/lib/chrony/drift\r\n\r\n# Allow the system clock to be stepped in the first three updates\r\n# if its offset is larger than 1 second.\r\nmakestep 1.0 3\r\n\r\n# Enable kernel synchronization of the real-time clock (RTC).\r\nrtcsync\r\n\r\n# Enable hardware timestamping on all interfaces that support it.\r\n#hwtimestamp *\r\n\r\n# Increase the minimum number of selectable sources required to adjust\r\n# the system clock.\r\n#minsources 2\r\n\r\n# Allow NTP client access from local network.\r\n#allow 192.168.0.0/16\r\n\r\n# Serve time even if not synchronized to a time source.\r\n#local stratum 10\r\n\r\n# Specify file containing keys for NTP authentication.\r\nkeyfile /etc/chrony.keys\r\n\r\n# Get TAI-UTC offset and leap seconds from the system tz database.\r\nleapsectz right/UTC\r\n\r\n# Specify directory for log files.\r\nlogdir /var/log/chrony\r\n\r\n# Select which information is logged.\r\n#log measurements statistics tracking\r\n",
+                        "stdout_lines": [
+                            "# Use public servers from the pool.ntp.org project.",
+                            "# Please consider joining the pool (http://www.pool.ntp.org/join.html).",
+                            "",
+                            "",
+                            "server 0.rhel.pool.ntp.org iburst",
+                            "server 1.rhel.pool.ntp.org iburst",
+                            "server 2.rhel.pool.ntp.org iburst",
+                            "server 3.rhel.pool.ntp.org iburst",
+                            "",
+                            "# Record the rate at which the system clock gains/losses time.",
+                            "driftfile /var/lib/chrony/drift",
+                            "",
+                            "# Allow the system clock to be stepped in the first three updates",
+                            "# if its offset is larger than 1 second.",
+                            "makestep 1.0 3",
+                            "",
+                            "# Enable kernel synchronization of the real-time clock (RTC).",
+                            "rtcsync",
+                            "",
+                            "# Enable hardware timestamping on all interfaces that support it.",
+                            "#hwtimestamp *",
+                            "",
+                            "# Increase the minimum number of selectable sources required to adjust",
+                            "# the system clock.",
+                            "#minsources 2",
+                            "",
+                            "# Allow NTP client access from local network.",
+                            "#allow 192.168.0.0/16",
+                            "",
+                            "# Serve time even if not synchronized to a time source.",
+                            "#local stratum 10",
+                            "",
+                            "# Specify file containing keys for NTP authentication.",
+                            "keyfile /etc/chrony.keys",
+                            "",
+                            "# Get TAI-UTC offset and leap seconds from the system tz database.",
+                            "leapsectz right/UTC",
+                            "",
+                            "# Specify directory for log files.",
+                            "logdir /var/log/chrony",
+                            "",
+                            "# Select which information is logged.",
+                            "#log measurements statistics tracking"
+                        ],
+                        "parsed": {
+                            "servers": [
+                                {
+                                    "name": "0.rhel.pool.ntp.org",
+                                    "params": [
+                                        "iburst"
+                                    ]
+                                },
+                                {
+                                    "name": "1.rhel.pool.ntp.org",
+                                    "params": [
+                                        "iburst"
+                                    ]
+                                },
+                                {
+                                    "name": "2.rhel.pool.ntp.org",
+                                    "params": [
+                                        "iburst"
+                                    ]
+                                },
+                                {
+                                    "name": "3.rhel.pool.ntp.org",
+                                    "params": [
+                                        "iburst"
+                                    ]
+                                }
+                            ]
+                        },
+                        "ansible_facts": {
+                            "original_ntp_configuration": {
+                                "servers": [
+                                    {
+                                        "name": "0.rhel.pool.ntp.org",
+                                        "params": [
+                                            "iburst"
+                                        ]
+                                    },
+                                    {
+                                        "name": "1.rhel.pool.ntp.org",
+                                        "params": [
+                                            "iburst"
+                                        ]
+                                    },
+                                    {
+                                        "name": "2.rhel.pool.ntp.org",
+                                        "params": [
+                                            "iburst"
+                                        ]
+                                    },
+                                    {
+                                        "name": "3.rhel.pool.ntp.org",
+                                        "params": [
+                                            "iburst"
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "_ansible_no_log": false,
+                        "changed": false
+                    },
+                    "start": "2021-03-17T21:02:06.369657",
+                    "end": "2021-03-17T21:02:06.593448",
+                    "duration": 0.223791,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Compare the current and desired",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000031",
+                    "task_action": "ansible.utils.fact_diff",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:10",
+                    "role": "ntp",
+                    "host": "node1",
+                    "uuid": "ee860bfa-7acf-42da-a39a-5b48d78ad57d",
+                    "__host": "node1",
+                    "__result": "OK",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 9,
+                    "__task": "Compare the current and desired",
+                    "__task_action": "ansible.utils.fact_diff",
+                    "remote_addr": "node1",
+                    "res": {
+                        "diff": {
+                            "prepared": ""
+                        },
+                        "changed": false,
+                        "diff_lines": [],
+                        "diff_text": "",
+                        "_ansible_no_log": false
+                    },
+                    "start": "2021-03-17T21:02:06.610540",
+                    "end": "2021-03-17T21:02:06.689174",
+                    "duration": 0.078634,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Compare the current and desired",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000031",
+                    "task_action": "ansible.utils.fact_diff",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:10",
+                    "role": "ntp",
+                    "host": "node2",
+                    "uuid": "f9fc4408-3b99-46d5-b7a1-5386009b2a43",
+                    "__host": "node2",
+                    "__result": "OK",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 10,
+                    "__task": "Compare the current and desired",
+                    "__task_action": "ansible.utils.fact_diff",
+                    "remote_addr": "node2",
+                    "res": {
+                        "diff": {
+                            "prepared": ""
+                        },
+                        "changed": false,
+                        "diff_lines": [],
+                        "diff_text": "",
+                        "_ansible_no_log": false
+                    },
+                    "start": "2021-03-17T21:02:06.633712",
+                    "end": "2021-03-17T21:02:06.713241",
+                    "duration": 0.079529,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Compare the current and desired",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000031",
+                    "task_action": "ansible.utils.fact_diff",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:10",
+                    "role": "ntp",
+                    "host": "node3",
+                    "uuid": "eed35b6e-0852-4101-85f7-3af95f4771fc",
+                    "__host": "node3",
+                    "__result": "OK",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 11,
+                    "__task": "Compare the current and desired",
+                    "__task_action": "ansible.utils.fact_diff",
+                    "remote_addr": "node3",
+                    "res": {
+                        "diff": {
+                            "prepared": ""
+                        },
+                        "changed": false,
+                        "diff_lines": [],
+                        "diff_text": "",
+                        "_ansible_no_log": false
+                    },
+                    "start": "2021-03-17T21:02:06.669193",
+                    "end": "2021-03-17T21:02:06.755275",
+                    "duration": 0.086082,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Push a corrected NTP conf file",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000033",
+                    "task_action": "ansible.builtin.template",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:20",
+                    "role": "ntp",
+                    "host": "node1",
+                    "uuid": "65c9e9da-216f-4301-9403-772c54fb7098",
+                    "__host": "node1",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 12,
+                    "__task": "Push a corrected NTP conf file",
+                    "__task_action": "ansible.builtin.template",
+                    "remote_addr": "node1",
+                    "start": "2021-03-17T21:02:06.766533",
+                    "end": "2021-03-17T21:02:06.787584",
+                    "duration": 0.021051,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Push a corrected NTP conf file",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000033",
+                    "task_action": "ansible.builtin.template",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:20",
+                    "role": "ntp",
+                    "host": "node2",
+                    "uuid": "0ccb82f3-be64-40f6-8cd3-a983d8089fa0",
+                    "__host": "node2",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 13,
+                    "__task": "Push a corrected NTP conf file",
+                    "__task_action": "ansible.builtin.template",
+                    "remote_addr": "node2",
+                    "start": "2021-03-17T21:02:06.783120",
+                    "end": "2021-03-17T21:02:06.809293",
+                    "duration": 0.026173,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Push a corrected NTP conf file",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000033",
+                    "task_action": "ansible.builtin.template",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:20",
+                    "role": "ntp",
+                    "host": "node3",
+                    "uuid": "984f5fc3-df67-489b-8b88-f198f93cd866",
+                    "__host": "node3",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 14,
+                    "__task": "Push a corrected NTP conf file",
+                    "__task_action": "ansible.builtin.template",
+                    "remote_addr": "node3",
+                    "start": "2021-03-17T21:02:06.804910",
+                    "end": "2021-03-17T21:02:06.819311",
+                    "duration": 0.014401,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Restart service chronyd",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000034",
+                    "task_action": "ansible.builtin.service",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:29",
+                    "role": "ntp",
+                    "host": "node1",
+                    "uuid": "28e3dcec-5c6d-4702-8273-c2db1bd2f03a",
+                    "__host": "node1",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 15,
+                    "__task": "Restart service chronyd",
+                    "__task_action": "ansible.builtin.service",
+                    "remote_addr": "node1",
+                    "start": "2021-03-17T21:02:06.832489",
+                    "end": "2021-03-17T21:02:06.850899",
+                    "duration": 0.01841,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Restart service chronyd",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000034",
+                    "task_action": "ansible.builtin.service",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:29",
+                    "role": "ntp",
+                    "host": "node2",
+                    "uuid": "76723360-563d-4afe-bafc-f16778f79377",
+                    "__host": "node2",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 16,
+                    "__task": "Restart service chronyd",
+                    "__task_action": "ansible.builtin.service",
+                    "remote_addr": "node2",
+                    "start": "2021-03-17T21:02:06.846608",
+                    "end": "2021-03-17T21:02:06.866217",
+                    "duration": 0.019609,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Restart service chronyd",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000034",
+                    "task_action": "ansible.builtin.service",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:29",
+                    "role": "ntp",
+                    "host": "node3",
+                    "uuid": "59fbb6da-ba1f-48c3-a8be-45b40665b967",
+                    "__host": "node3",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 17,
+                    "__task": "Restart service chronyd",
+                    "__task_action": "ansible.builtin.service",
+                    "remote_addr": "node3",
+                    "start": "2021-03-17T21:02:06.862064",
+                    "end": "2021-03-17T21:02:06.875157",
+                    "duration": 0.013093,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Allow servers to syncronize (60s)",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000035",
+                    "task_action": "ansible.builtin.pause",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:34",
+                    "role": "ntp",
+                    "host": "node1",
+                    "uuid": "9c17c8f8-066d-4492-a6a5-688247902602",
+                    "__host": "node1",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 18,
+                    "__task": "Allow servers to syncronize (60s)",
+                    "__task_action": "ansible.builtin.pause",
+                    "remote_addr": "node1",
+                    "start": "2021-03-17T21:02:06.887789",
+                    "end": "2021-03-17T21:02:06.900995",
+                    "duration": 0.013206,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Collect the current NTP server statuses",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000036",
+                    "task_action": "ansible.utils.cli_parse",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:38",
+                    "role": "ntp",
+                    "host": "node1",
+                    "uuid": "2d8fae88-a389-42a0-9513-be15509748c9",
+                    "__host": "node1",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 19,
+                    "__task": "Collect the current NTP server statuses",
+                    "__task_action": "ansible.utils.cli_parse",
+                    "remote_addr": "node1",
+                    "start": "2021-03-17T21:02:06.913604",
+                    "end": "2021-03-17T21:02:06.949667",
+                    "duration": 0.036063,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Collect the current NTP server statuses",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000036",
+                    "task_action": "ansible.utils.cli_parse",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:38",
+                    "role": "ntp",
+                    "host": "node2",
+                    "uuid": "89a8745b-d904-412d-a37e-4c84db8024ca",
+                    "__host": "node2",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 20,
+                    "__task": "Collect the current NTP server statuses",
+                    "__task_action": "ansible.utils.cli_parse",
+                    "remote_addr": "node2",
+                    "start": "2021-03-17T21:02:06.931643",
+                    "end": "2021-03-17T21:02:06.953175",
+                    "duration": 0.021532,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Collect the current NTP server statuses",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000036",
+                    "task_action": "ansible.utils.cli_parse",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:38",
+                    "role": "ntp",
+                    "host": "node3",
+                    "uuid": "96bb5ce0-e6ea-4dbb-93e5-2a0fa9ff5ae0",
+                    "__host": "node3",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 21,
+                    "__task": "Collect the current NTP server statuses",
+                    "__task_action": "ansible.utils.cli_parse",
+                    "remote_addr": "node3",
+                    "start": "2021-03-17T21:02:06.945078",
+                    "end": "2021-03-17T21:02:06.959299",
+                    "duration": 0.014221,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Define the schema that will be used for checking",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000037",
+                    "task_action": "ansible.builtin.set_fact",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:46",
+                    "role": "ntp",
+                    "host": "node1",
+                    "uuid": "b4a61a7a-3886-4383-be8f-5cfb9515ad05",
+                    "__host": "node1",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 22,
+                    "__task": "Define the schema that will be used for checking",
+                    "__task_action": "ansible.builtin.set_fact",
+                    "remote_addr": "node1",
+                    "start": "2021-03-17T21:02:06.973330",
+                    "end": "2021-03-17T21:02:06.993661",
+                    "duration": 0.020331,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Define the schema that will be used for checking",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000037",
+                    "task_action": "ansible.builtin.set_fact",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:46",
+                    "role": "ntp",
+                    "host": "node2",
+                    "uuid": "0175ef6c-c1ad-43ad-bdb6-c3d495f6cca8",
+                    "__host": "node2",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 23,
+                    "__task": "Define the schema that will be used for checking",
+                    "__task_action": "ansible.builtin.set_fact",
+                    "remote_addr": "node2",
+                    "start": "2021-03-17T21:02:06.989198",
+                    "end": "2021-03-17T21:02:07.012414",
+                    "duration": 0.023216,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Define the schema that will be used for checking",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000037",
+                    "task_action": "ansible.builtin.set_fact",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:46",
+                    "role": "ntp",
+                    "host": "node3",
+                    "uuid": "f97cdf3c-8c1c-45e8-8458-015b5063a838",
+                    "__host": "node3",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 24,
+                    "__task": "Define the schema that will be used for checking",
+                    "__task_action": "ansible.builtin.set_fact",
+                    "remote_addr": "node3",
+                    "start": "2021-03-17T21:02:07.008354",
+                    "end": "2021-03-17T21:02:07.023609",
+                    "duration": 0.015255,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Use a JSON schema to ensure no NTP servers are stratum 16 and count is correct",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000038",
+                    "task_action": "ansible.builtin.set_fact",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:69",
+                    "role": "ntp",
+                    "host": "node1",
+                    "uuid": "19ca5739-bcb2-4382-be5d-9074fe174c95",
+                    "__host": "node1",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 25,
+                    "__task": "Use a JSON schema to ensure no NTP servers are stratum 16 and count is correct",
+                    "__task_action": "ansible.builtin.set_fact",
+                    "remote_addr": "node1",
+                    "start": "2021-03-17T21:02:07.035728",
+                    "end": "2021-03-17T21:02:07.062838",
+                    "duration": 0.02711,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Use a JSON schema to ensure no NTP servers are stratum 16 and count is correct",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000038",
+                    "task_action": "ansible.builtin.set_fact",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:69",
+                    "role": "ntp",
+                    "host": "node2",
+                    "uuid": "cef4cb6f-88e5-4725-8f45-9317e678ce78",
+                    "__host": "node2",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 26,
+                    "__task": "Use a JSON schema to ensure no NTP servers are stratum 16 and count is correct",
+                    "__task_action": "ansible.builtin.set_fact",
+                    "remote_addr": "node2",
+                    "start": "2021-03-17T21:02:07.058344",
+                    "end": "2021-03-17T21:02:07.079704",
+                    "duration": 0.02136,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Use a JSON schema to ensure no NTP servers are stratum 16 and count is correct",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000038",
+                    "task_action": "ansible.builtin.set_fact",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:69",
+                    "role": "ntp",
+                    "host": "node3",
+                    "uuid": "87d93238-287a-4eb8-bf8c-684c61e0ac0a",
+                    "__host": "node3",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 27,
+                    "__task": "Use a JSON schema to ensure no NTP servers are stratum 16 and count is correct",
+                    "__task_action": "ansible.builtin.set_fact",
+                    "remote_addr": "node3",
+                    "start": "2021-03-17T21:02:07.075797",
+                    "end": "2021-03-17T21:02:07.092699",
+                    "duration": 0.016902,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Restore the original configuration if a server is failed (stratum 16)",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000039",
+                    "task_action": "ansible.builtin.template",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:73",
+                    "role": "ntp",
+                    "host": "node1",
+                    "uuid": "1af5c1e3-4384-4748-96ca-4799b3177076",
+                    "__host": "node1",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 28,
+                    "__task": "Restore the original configuration if a server is failed (stratum 16)",
+                    "__task_action": "ansible.builtin.template",
+                    "remote_addr": "node1",
+                    "start": "2021-03-17T21:02:07.105030",
+                    "end": "2021-03-17T21:02:07.124140",
+                    "duration": 0.01911,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Restore the original configuration if a server is failed (stratum 16)",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000039",
+                    "task_action": "ansible.builtin.template",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:73",
+                    "role": "ntp",
+                    "host": "node2",
+                    "uuid": "83eade3a-b566-4f30-91a9-b018d3a62f71",
+                    "__host": "node2",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 29,
+                    "__task": "Restore the original configuration if a server is failed (stratum 16)",
+                    "__task_action": "ansible.builtin.template",
+                    "remote_addr": "node2",
+                    "start": "2021-03-17T21:02:07.120118",
+                    "end": "2021-03-17T21:02:07.144628",
+                    "duration": 0.02451,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Restore the original configuration if a server is failed (stratum 16)",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000039",
+                    "task_action": "ansible.builtin.template",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:73",
+                    "role": "ntp",
+                    "host": "node3",
+                    "uuid": "ec57702d-8fe4-4886-9322-37a8c366fbff",
+                    "__host": "node3",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 30,
+                    "__task": "Restore the original configuration if a server is failed (stratum 16)",
+                    "__task_action": "ansible.builtin.template",
+                    "remote_addr": "node3",
+                    "start": "2021-03-17T21:02:07.140272",
+                    "end": "2021-03-17T21:02:07.154709",
+                    "duration": 0.014437,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Restart service chronyd",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-00000000003a",
+                    "task_action": "ansible.builtin.service",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:83",
+                    "role": "ntp",
+                    "host": "node1",
+                    "uuid": "dd0852cb-c694-47fd-9f76-e34ee06f5b2c",
+                    "__host": "node1",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 31,
+                    "__task": "Restart service chronyd",
+                    "__task_action": "ansible.builtin.service",
+                    "remote_addr": "node1",
+                    "start": "2021-03-17T21:02:07.167752",
+                    "end": "2021-03-17T21:02:07.189220",
+                    "duration": 0.021468,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Restart service chronyd",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-00000000003a",
+                    "task_action": "ansible.builtin.service",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:83",
+                    "role": "ntp",
+                    "host": "node2",
+                    "uuid": "5471541d-550d-4aa0-9a85-ec0ee61ab53e",
+                    "__host": "node2",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 32,
+                    "__task": "Restart service chronyd",
+                    "__task_action": "ansible.builtin.service",
+                    "remote_addr": "node2",
+                    "start": "2021-03-17T21:02:07.184792",
+                    "end": "2021-03-17T21:02:07.211277",
+                    "duration": 0.026485,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Restart service chronyd",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-00000000003a",
+                    "task_action": "ansible.builtin.service",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:83",
+                    "role": "ntp",
+                    "host": "node3",
+                    "uuid": "ccbf4741-e7d5-43de-8fac-8b27ada4cbfb",
+                    "__host": "node3",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 33,
+                    "__task": "Restart service chronyd",
+                    "__task_action": "ansible.builtin.service",
+                    "remote_addr": "node3",
+                    "start": "2021-03-17T21:02:07.206371",
+                    "end": "2021-03-17T21:02:07.222727",
+                    "duration": 0.016356,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Fail the host to indicate unreachable servers were found and config restored",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-00000000003b",
+                    "task_action": "ansible.builtin.fail",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:89",
+                    "role": "ntp",
+                    "host": "node1",
+                    "uuid": "5e17e5f7-1c24-4bb3-a222-5b78f6fd3883",
+                    "__host": "node1",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 34,
+                    "__task": "Fail the host to indicate unreachable servers were found and config restored",
+                    "__task_action": "ansible.builtin.fail",
+                    "remote_addr": "node1",
+                    "start": "2021-03-17T21:02:07.235200",
+                    "end": "2021-03-17T21:02:07.280221",
+                    "duration": 0.045021,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Fail the host to indicate unreachable servers were found and config restored",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-00000000003b",
+                    "task_action": "ansible.builtin.fail",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:89",
+                    "role": "ntp",
+                    "host": "node2",
+                    "uuid": "fa9fc588-ce07-4fce-8382-3bd8f1f9d3ee",
+                    "__host": "node2",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 35,
+                    "__task": "Fail the host to indicate unreachable servers were found and config restored",
+                    "__task_action": "ansible.builtin.fail",
+                    "remote_addr": "node2",
+                    "start": "2021-03-17T21:02:07.259829",
+                    "end": "2021-03-17T21:02:07.281843",
+                    "duration": 0.022014,
+                    "event_loop": null
+                },
+                {
+                    "playbook": "/home/student1/ntp_demo/site2.yaml",
+                    "playbook_uuid": "819c9158-aa95-49b7-af21-67e01bd4ca8c",
+                    "play": "all",
+                    "play_uuid": "fe4ea7cc-3f7e-919b-9e38-000000000008",
+                    "play_pattern": "all",
+                    "task": "Fail the host to indicate unreachable servers were found and config restored",
+                    "task_uuid": "fe4ea7cc-3f7e-919b-9e38-00000000003b",
+                    "task_action": "ansible.builtin.fail",
+                    "task_args": "",
+                    "task_path": "/usr/share/ansible/collections/ansible_collections/brad/foo/roles/ntp/tasks/main.yml:89",
+                    "role": "ntp",
+                    "host": "node3",
+                    "uuid": "26f7024c-6789-47d6-8832-7068ec9a710f",
+                    "__host": "node3",
+                    "__result": "SKIPPED",
+                    "__changed": false,
+                    "__duration": "0s",
+                    "__number": 36,
+                    "__task": "Fail the host to indicate unreachable servers were found and config restored",
+                    "__task_action": "ansible.builtin.fail",
+                    "remote_addr": "node3",
+                    "start": "2021-03-17T21:02:07.273856",
+                    "end": "2021-03-17T21:02:07.297956",
+                    "duration": 0.0241,
+                    "event_loop": null
+                }
+            ],
+            "__ok": 12,
+            "__skipped": 25,
+            "__failed": 0,
+            "__unreachable": 0,
+            "__ignored": 0,
+            "__in_progress": 0,
+            "__changed": 0,
+            "__task_count": 37,
+            "__% completed": "100% \u2587\u2587\u2587\u2587\u2587\u2587\u2587\u2587\u2587\u2587\u2587",
+            "___% completed": "100%",
+            "__pcomplete": 100
+        }
+    ],
+    "stdout": [
+        "",
+        "PLAY [all] *********************************************************************",
+        "",
+        "TASK [Gathering Facts] *********************************************************",
+        "\u001b[0;32mok: [node3]\u001b[0m",
+        "\u001b[0;32mok: [node1]\u001b[0m",
+        "\u001b[0;32mok: [node2]\u001b[0m",
+        "",
+        "TASK [include_role : brad.foo.ntp] *********************************************",
+        "",
+        "TASK [brad.foo.ntp : Collect the current NTP configuration] ********************",
+        "\u001b[0;32mok: [node2]\u001b[0m",
+        "\u001b[0;32mok: [node1]\u001b[0m",
+        "\u001b[0;32mok: [node3]\u001b[0m",
+        "",
+        "TASK [brad.foo.ntp : Compare the current and desired] **************************",
+        "\u001b[0;32mok: [node1]\u001b[0m",
+        "\u001b[0;32mok: [node2]\u001b[0m",
+        "\u001b[0;32mok: [node3]\u001b[0m",
+        "",
+        "TASK [brad.foo.ntp : Push a corrected NTP conf file] ***************************",
+        "\u001b[0;36mskipping: [node1]\u001b[0m",
+        "\u001b[0;36mskipping: [node2]\u001b[0m",
+        "\u001b[0;36mskipping: [node3]\u001b[0m",
+        "",
+        "TASK [brad.foo.ntp : Restart service chronyd] **********************************",
+        "\u001b[0;36mskipping: [node1]\u001b[0m",
+        "\u001b[0;36mskipping: [node2]\u001b[0m",
+        "\u001b[0;36mskipping: [node3]\u001b[0m",
+        "",
+        "TASK [brad.foo.ntp : Allow servers to syncronize (60s)] ************************",
+        "\u001b[0;36mskipping: [node1]\u001b[0m",
+        "",
+        "TASK [brad.foo.ntp : Collect the current NTP server statuses] ******************",
+        "\u001b[0;36mskipping: [node1]\u001b[0m",
+        "\u001b[0;36mskipping: [node2]\u001b[0m",
+        "\u001b[0;36mskipping: [node3]\u001b[0m",
+        "",
+        "TASK [brad.foo.ntp : Define the schema that will be used for checking] *********",
+        "\u001b[0;36mskipping: [node1]\u001b[0m",
+        "\u001b[0;36mskipping: [node2]\u001b[0m",
+        "\u001b[0;36mskipping: [node3]\u001b[0m",
+        "",
+        "TASK [brad.foo.ntp : Use a JSON schema to ensure no NTP servers are stratum 16 and count is correct] ***",
+        "\u001b[0;36mskipping: [node1]\u001b[0m",
+        "\u001b[0;36mskipping: [node2]\u001b[0m",
+        "\u001b[0;36mskipping: [node3]\u001b[0m",
+        "",
+        "TASK [brad.foo.ntp : Restore the original configuration if a server is failed (stratum 16)] ***",
+        "\u001b[0;36mskipping: [node1]\u001b[0m",
+        "\u001b[0;36mskipping: [node2]\u001b[0m",
+        "\u001b[0;36mskipping: [node3]\u001b[0m",
+        "",
+        "TASK [brad.foo.ntp : Restart service chronyd] **********************************",
+        "\u001b[0;36mskipping: [node1]\u001b[0m",
+        "\u001b[0;36mskipping: [node2]\u001b[0m",
+        "\u001b[0;36mskipping: [node3]\u001b[0m",
+        "",
+        "TASK [brad.foo.ntp : Fail the host to indicate unreachable servers were found and config restored] ***",
+        "\u001b[0;36mskipping: [node1]\u001b[0m",
+        "\u001b[0;36mskipping: [node2]\u001b[0m",
+        "\u001b[0;36mskipping: [node3]\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;32mnode1\u001b[0m                      : \u001b[0;32mok=3   \u001b[0m changed=0    unreachable=0    failed=0    \u001b[0;36mskipped=9   \u001b[0m rescued=0    ignored=0   ",
+        "\u001b[0;32mnode2\u001b[0m                      : \u001b[0;32mok=3   \u001b[0m changed=0    unreachable=0    failed=0    \u001b[0;36mskipped=8   \u001b[0m rescued=0    ignored=0   ",
+        "\u001b[0;32mnode3\u001b[0m                      : \u001b[0;32mok=3   \u001b[0m changed=0    unreachable=0    failed=0    \u001b[0;36mskipped=8   \u001b[0m rescued=0    ignored=0   "
+    ],
+    "status": "successful",
+    "status_color": 10
+}
