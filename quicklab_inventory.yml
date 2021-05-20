@@ -1,0 +1,18 @@
+---
+
+  general:
+    hosts:
+      master-0:
+        ansible_host: master-0.sharedocp39.lab.rdu2.cee.redhat.com
+      infra-0:
+        ansible_host: infra-0.sharedocp39.lab.rdu2.cee.redhat.com 
+      lb-0:
+        ansible_host: lb-0.sharedocp39.lab.rdu2.cee.redhat.com
+  nodes:
+    hosts:
+      node-0:
+        ansible_host: node-0.sharedocp39.lab.rdu2.cee.redhat.com
+      node-1:
+        ansible_host: node-1.sharedocp39.lab.rdu2.cee.redhat.com
+      node-2:
+        ansible_host: node-2.sharedocp39.lab.rdu2.cee.redhat.com
