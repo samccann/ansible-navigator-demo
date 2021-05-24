@@ -2,9 +2,9 @@ ansible-navigator:
 #   app: run
 #   collection-doc-cache-path: /tmp/cache.db
 #   cmdline: "--forks 15"
-#   editor:
-#     command: vim_from_setting
-#     console: False
+  editor:
+    command: code -g {filename}:{line_number}
+    console: True
 #   documentation:
 #     plugin:
 #       name: shell
