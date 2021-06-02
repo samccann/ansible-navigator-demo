@@ -11,8 +11,8 @@ ansible-navigator:
 #       type: become
   execution-environment:
 #    image: "quay.io/ansible/network-ee"
-#    image: "registry-proxy.engineering.redhat.com/rh-osbs/ansible-automation-platform-20-ee-supported-rhel8"
-    image: "registry-proxy.engineering.redhat.com/rh-osbs/ansible-automation-platform-20-ee-minimal-rhel8"
+    image: "registry-proxy.engineering.redhat.com/rh-osbs/ansible-automation-platform-20-ee-supported-rhel8"
+#    image: "registry-proxy.engineering.redhat.com/rh-osbs/ansible-automation-platform-20-ee-minimal-rhel8"
     enabled: True
 #     environment-variables:
 #       pass:
