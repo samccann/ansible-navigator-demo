@@ -13,6 +13,7 @@ ansible-navigator:
 #    image: "quay.io/ansible/network-ee"
     image: "registry-proxy.engineering.redhat.com/rh-osbs/ansible-automation-platform-20-ee-supported-rhel8"
 #    image: "registry-proxy.engineering.redhat.com/rh-osbs/ansible-automation-platform-20-ee-minimal-rhel8"
+#    image: "quay.io/ansible/python-base"
     enabled: True
 #     environment-variables:
 #       pass:
